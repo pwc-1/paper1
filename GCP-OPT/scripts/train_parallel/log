@@ -1,0 +1,1 @@
+run_distribute_train_gpu.sh: line 89: mpirun: command not found

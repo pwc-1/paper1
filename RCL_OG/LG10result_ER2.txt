@@ -1,0 +1,3 @@
+type:RCL-OG-E,fdr:0.12861,tpr:1.0,fpr:0.05454,shd:1.8,precision:0.8713899999999996,F1:0.93079
+type:RCL-OG-E,fdr:0.1429,tpr:1.0,fpr:0.0606,shd:2,precision:0.8571,F1:0.9231
+type:RCL-OG-E,fdr:0.0,tpr:1.0,fpr:0.0,shd:0,precision:1.0,F1:1.0

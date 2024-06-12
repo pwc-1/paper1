@@ -1,0 +1,194 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+# [No.1] Default_wrapper.4
+# In file covariance.py:184/    def construct(self, x, y=None):/
+funcgraph fg_4(
+        %para1 : Tensor(F32)[128, 128, 14, 14]    # x
+    ) {
+
+#------------------------> 0
+    %1 = FuncGraph::fg_10(%para1, None)    #(Tensor(F32)[128, 128, 14, 14], NoneTypeNoShape)    # fg_10=Default.10 #scope: Default
+#[CNode]11
+    Primitive::Return{prim_type=1}(%1)    #(Undefined) #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]12
+}
+# order:
+#   1: @Default_wrapper.4:[CNode]11{[0]: ValueNode<FuncGraph> Default.10, [1]: x, [2]: ValueNode<None> None}
+#   2: @Default_wrapper.4:[CNode]12{[0]: ValueNode<Primitive> Return, [1]: [CNode]11}
+
+
+# [No.2] Default.5
+# In file covariance.py:184/    def construct(self, x, y=None):/
+funcgraph fg_5(
+        %para2 : Tensor(F32)[128, 128, 14, 14]    # ori
+        , %para3 : NoneTypeNoShape    # y
+    ) {
+    %1 : BoolNoShape = DoSignaturePrimitive::S-Prim-is_not{prim_type=1}(None, None)    #(NoneTypeNoShape, NoneTypeNoShape) #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]13
+    %2 : BoolNoShape = FuncGraph::fg_14(%1)    #(BoolNoShape)    # fg_14=bool_.14 #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]15
+    %3 : FuncNoShape = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_16, FuncGraph::fg_17)    #(BoolNoShape, FuncNoShape, FuncNoShape)    # fg_16=✓Default.16, fg_17=✗Default.17 #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]18
+    %4 : Tuple[Tensor(F32),NoneType]TupleShape((128, 128, 14, 14), NoShape) = %3() #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]19
+    %5 : Tensor(F32)[128, 128, 14, 14] = Primitive::TupleGetItem{prim_type=1}(%4, I64(0))    #(Tuple[Tensor(F32),NoneType]TupleShape((128, 128, 14, 14), NoShape), I64NoShape) #scope: Default
+#[CNode]20
+    %6 : NoneTypeNoShape = Primitive::TupleGetItem{prim_type=1}(%4, I64(1))    #(Tuple[Tensor(F32),NoneType]TupleShape((128, 128, 14, 14), NoShape), I64NoShape) #scope: Default
+#[CNode]21
+
+#------------------------> 1
+    %7 = FuncGraph::fg_6(%5, %6)    #(Tensor(F32)[128, 128, 14, 14], NoneTypeNoShape)    # fg_6=↓Default.6 #scope: Default
+#[CNode]22
+    Primitive::Return{prim_type=1}(%7)    #(Undefined) #scope: Default
+      # In file covariance.py:186/        if self.dr is not None:/#[CNode]23
+}
+# order:
+#   1: @Default.5:[CNode]13{[0]: ValueNode<DoSignaturePrimitive> S-Prim-is_not, [1]: ValueNode<None> None, [2]: ValueNode<None> None}
+#   2: @Default.5:[CNode]15{[0]: ValueNode<FuncGraph> bool_.14, [1]: [CNode]13}
+#   3: @Default.5:[CNode]24{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:__main__..<Covariance::140079405553808>', [2]: ValueNode<Symbol> conv_dr_block}
+#   4: @Default.5:[CNode]18{[0]: ValueNode<Primitive> Switch, [1]: [CNode]15, [2]: ValueNode<FuncGraph> ✓Default.16, [3]: ValueNode<FuncGraph> ✗Default.17}
+#   5: @Default.5:[CNode]19{[0]: [CNode]18}
+#   6: @Default.5:[CNode]22{[0]: ValueNode<FuncGraph> ↓Default.6, [1]: [CNode]20, [2]: [CNode]21}
+#   7: @Default.5:[CNode]23{[0]: ValueNode<Primitive> Return, [1]: [CNode]22}
+#   8: @Default.5:[CNode]20{[0]: ValueNode<Primitive> TupleGetItem, [1]: [CNode]19, [2]: ValueNode<Int64Imm> 0}
+#   9: @Default.5:[CNode]21{[0]: ValueNode<Primitive> TupleGetItem, [1]: [CNode]19, [2]: ValueNode<Int64Imm> 1}
+
+
+# [No.3] ↓Default.6
+# In file covariance.py:186/        if self.dr is not None:/
+funcgraph fg_6(
+        %para4 : Tensor(F32)[128, 128, 14, 14]    # фx
+        , %para5 : NoneTypeNoShape    # фy
+    ) {
+    %1 : BoolNoShape = FuncGraph::fg_14(Bool(1))    #(BoolNoShape)    # fg_14=bool_.14 #scope: Default
+      # In file covariance.py:200/        if self.remove_mean:/#[CNode]25
+    %2 : FuncNoShape = Primitive::Switch{prim_type=1}(%1, FuncGraph::fg_26, FuncGraph::fg_27)    #(BoolNoShape, FuncNoShape, FuncNoShape)    # fg_26=✓↓Default.26, fg_27=✗↓Default.27 #scope: Default
+      # In file covariance.py:200/        if self.remove_mean:/#[CNode]28
+    %3 : Tuple[NoneType,Tensor(F32)]TupleShape(NoShape, (128, 128, 14, 14)) = %2() #scope: Default
+      # In file covariance.py:200/        if self.remove_mean:/#[CNode]29
+    %4 : NoneTypeNoShape = Primitive::TupleGetItem{prim_type=1}(%3, I64(0))    #(Tuple[NoneType,Tensor(F32)]TupleShape(NoShape, (128, 128, 14, 14)), I64NoShape) #scope: Default
+#[CNode]30
+    %5 : Tensor(F32)[128, 128, 14, 14] = Primitive::TupleGetItem{prim_type=1}(%3, I64(1))    #(Tuple[NoneType,Tensor(F32)]TupleShape(NoShape, (128, 128, 14, 14)), I64NoShape) #scope: Default
+#[CNode]31
+
+#------------------------> 2
+    %6 = FuncGraph::fg_7(%4, %5)    #(NoneTypeNoShape, Tensor(F32)[128, 128, 14, 14])    # fg_7=↓↓Default.7 #scope: Default
+#[CNode]32
+    Primitive::Return{prim_type=1}(%6)    #(Undefined) #scope: Default
+      # In file covariance.py:200/        if self.remove_mean:/#[CNode]33
+}
+# order:
+#   1: @↓Default.6:[CNode]25{[0]: ValueNode<FuncGraph> bool_.14, [1]: ValueNode<BoolImm> true}
+#   2: @↓Default.6:[CNode]28{[0]: ValueNode<Primitive> Switch, [1]: [CNode]25, [2]: ValueNode<FuncGraph> ✓↓Default.26, [3]: ValueNode<FuncGraph> ✗↓Default.27}
+#   3: @↓Default.6:[CNode]29{[0]: [CNode]28}
+#   4: @↓Default.6:[CNode]32{[0]: ValueNode<FuncGraph> ↓↓Default.7, [1]: [CNode]30, [2]: [CNode]31}
+#   5: @↓Default.6:[CNode]33{[0]: ValueNode<Primitive> Return, [1]: [CNode]32}
+#   6: @↓Default.6:[CNode]30{[0]: ValueNode<Primitive> TupleGetItem, [1]: [CNode]29, [2]: ValueNode<Int64Imm> 0}
+#   7: @↓Default.6:[CNode]31{[0]: ValueNode<Primitive> TupleGetItem, [1]: [CNode]29, [2]: ValueNode<Int64Imm> 1}
+
+
+# [No.4] ↓↓Default.7
+# In file covariance.py:200/        if self.remove_mean:/
+funcgraph fg_7(
+        %para6 : NoneTypeNoShape    # фy
+        , %para7 : Tensor(F32)[128, 128, 14, 14]    # фx
+    ) {
+    %1 : BoolNoShape = DoSignaturePrimitive::S-Prim-is_not{prim_type=1}(%para6, None)    #(NoneTypeNoShape, NoneTypeNoShape) #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]34
+    %2 : BoolNoShape = FuncGraph::fg_14(%1)    #(BoolNoShape)    # fg_14=bool_.14 #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]35
+    %3 : FuncNoShape = Primitive::Switch{prim_type=1}(%2, FuncGraph::fg_8, FuncGraph::fg_36)    #(BoolNoShape, FuncNoShape, FuncNoShape)    # fg_8=✓↓↓Default.8, fg_36=✗↓↓Default.36 #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]37
+
+#------------------------> 3
+    %4 = %3() #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]38
+    %5 = FuncGraph::fg_39(%4)    #(Undefined)    # fg_39=↓↓↓Default.39 #scope: Default
+#[CNode]40
+    Primitive::Return{prim_type=1}(%5)    #(Undefined) #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]41
+}
+# order:
+#   1: @↓↓Default.7:[CNode]34{[0]: ValueNode<DoSignaturePrimitive> S-Prim-is_not, [1]: фy, [2]: ValueNode<None> None}
+#   2: @↓↓Default.7:[CNode]35{[0]: ValueNode<FuncGraph> bool_.14, [1]: [CNode]34}
+#   3: @↓↓Default.7:[CNode]37{[0]: ValueNode<Primitive> Switch, [1]: [CNode]35, [2]: ValueNode<FuncGraph> ✓↓↓Default.8, [3]: ValueNode<FuncGraph> ✗↓↓Default.36}
+#   4: @↓↓Default.7:[CNode]38{[0]: [CNode]37}
+#   5: @↓↓Default.7:[CNode]40{[0]: ValueNode<FuncGraph> ↓↓↓Default.39, [1]: [CNode]38}
+#   6: @↓↓Default.7:[CNode]41{[0]: ValueNode<Primitive> Return, [1]: [CNode]40}
+
+
+# [No.5] ✓↓↓Default.8
+# In file covariance.py:206/        if y is not None:/
+funcgraph fg_8[fg_7](
+) {
+
+#------------------------> 4
+    %1 = FuncGraph::fg_9(%para7, %para6)    #(Tensor(F32)[128, 128, 14, 14], NoneTypeNoShape)    # fg_9=_cross_cov.9 #scope: Default
+      # In file covariance.py:207/            x = self._cross_cov(x, y)/#x
+    %2 = FuncGraph::fg_42(I64(6))    #(Undefined)    # fg_42=print_.42 #scope: Default
+      # In file covariance.py:208/            print(6)/#[CNode]43
+    %3 = Primitive::stop_gradient{prim_type=1}(%2)    #(Undefined) #scope: Default
+#[CNode]44
+    %4 = Primitive::Depend{prim_type=1}[side_effect_propagate=I64(1)](%1, %3)    #(Undefined, Undefined) #scope: Default
+#[CNode]45
+    Primitive::Return{prim_type=1}(%4)    #(Undefined) #scope: Default
+      # In file covariance.py:206/        if y is not None:/#[CNode]46
+}
+# order:
+#   1: @✓↓↓Default.8:x{[0]: ValueNode<FuncGraph> _cross_cov.9, [1]: фx, [2]: фy}
+#   2: @✓↓↓Default.8:[CNode]43{[0]: ValueNode<FuncGraph> print_.42, [1]: ValueNode<Int64Imm> 6}
+#   3: @✓↓↓Default.8:[CNode]46{[0]: ValueNode<Primitive> Return, [1]: [CNode]45}
+
+
+# [No.6] _cross_cov.9
+# In file covariance.py:170/    def _cross_cov(self, x1, x2):/
+funcgraph fg_9(
+        %para8 : Tensor(F32)[128, 128, 14, 14]    # x1
+        , %para9 : NoneTypeNoShape    # x2
+    ) {
+    %1 : Tuple[I64*4]TupleShape(NoShape, NoShape, NoShape, NoShape) = Primitive::getattr{prim_type=1}(%para8, "shape")    #(Tensor(F32)[128, 128, 14, 14], StringNoShape) #scope: Default
+      # In file covariance.py:172/        batchsize1, d1, h1, w1 = x1.shape/#[CNode]47
+    %2 : I64NoShape = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%1, I64(0))    #(Tuple[I64*4]TupleShape(NoShape, NoShape, NoShape, NoShape), I64NoShape) #scope: Default
+      # In file covariance.py:172/        batchsize1, d1, h1, w1 = x1.shape/#batchsize1
+
+#------------------------> 5
+    %3 = Primitive::getattr{prim_type=1}(%para9, "shape")    #(NoneTypeNoShape, StringNoShape) #scope: Default
+      # In file covariance.py:173/        batchsize2, d2, h2, w2 = x2.shape/#[CNode]48
+    %4 = DoSignaturePrimitive::S-Prim-getitem{prim_type=1}(%3, I64(0))    #(Undefined, Undefined) #scope: Default
+      # In file covariance.py:173/        batchsize2, d2, h2, w2 = x2.shape/#batchsize2
+    %5 = DoSignaturePrimitive::S-Prim-equal{prim_type=1}(%2, %4)    #(I64NoShape, Undefined) #scope: Default
+      # In file covariance.py:176/        assert batchsize1 == batchsize2/#[CNode]49
+    %6 = FuncGraph::fg_14(%5)    #(Undefined)    # fg_14=bool_.14 #scope: Default
+      # In file covariance.py:176/        assert batchsize1 == batchsize2/#[CNode]50
+    %7 = Primitive::Switch{prim_type=1}(%6, FuncGraph::fg_51, FuncGraph::fg_52)    #(Undefined, Undefined, Undefined)    # fg_51=53.51, fg_52=54.52 #scope: Default
+      # In file covariance.py:176/        assert batchsize1 == batchsize2/#[CNode]55
+    %8 = %7() #scope: Default
+      # In file covariance.py:176/        assert batchsize1 == batchsize2/#[CNode]56
+    Primitive::Return{prim_type=1}(%8)    #(Undefined) #scope: Default
+      # In file covariance.py:176/        assert batchsize1 == batchsize2/#[CNode]57
+}
+# order:
+#   1: @_cross_cov.9:[CNode]47{[0]: ValueNode<Primitive> getattr, [1]: x1, [2]: ValueNode<StringImm> shape}
+#   2: @_cross_cov.9:batchsize1{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]47, [2]: ValueNode<Int64Imm> 0}
+#   3: @_cross_cov.9:d1{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]47, [2]: ValueNode<Int64Imm> 1}
+#   4: @_cross_cov.9:h1{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]47, [2]: ValueNode<Int64Imm> 2}
+#   5: @_cross_cov.9:w1{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]47, [2]: ValueNode<Int64Imm> 3}
+#   6: @_cross_cov.9:[CNode]48{[0]: ValueNode<Primitive> getattr, [1]: x2, [2]: ValueNode<StringImm> shape}
+#   7: @_cross_cov.9:batchsize2{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]48, [2]: ValueNode<Int64Imm> 0}
+#   8: @_cross_cov.9:d2{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]48, [2]: ValueNode<Int64Imm> 1}
+#   9: @_cross_cov.9:h2{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]48, [2]: ValueNode<Int64Imm> 2}
+#  10: @_cross_cov.9:w2{[0]: ValueNode<DoSignaturePrimitive> S-Prim-getitem, [1]: [CNode]48, [2]: ValueNode<Int64Imm> 3}
+#  11: @_cross_cov.9:N1{[0]: ValueNode<DoSignaturePrimitive> S-Prim-mul, [1]: h1, [2]: w1}
+#  12: @_cross_cov.9:N2{[0]: ValueNode<DoSignaturePrimitive> S-Prim-mul, [1]: h2, [2]: w2}
+#  13: @_cross_cov.9:[CNode]49{[0]: ValueNode<DoSignaturePrimitive> S-Prim-equal, [1]: batchsize1, [2]: batchsize2}
+#  14: @_cross_cov.9:[CNode]50{[0]: ValueNode<FuncGraph> bool_.14, [1]: [CNode]49}
+#  15: @_cross_cov.9:[CNode]55{[0]: ValueNode<Primitive> Switch, [1]: [CNode]50, [2]: ValueNode<FuncGraph> 53.51, [3]: ValueNode<FuncGraph> 54.52}
+#  16: @_cross_cov.9:[CNode]56{[0]: [CNode]55}
+#  17: @_cross_cov.9:[CNode]57{[0]: ValueNode<Primitive> Return, [1]: [CNode]56}
+
+
+#===============================================================================
+# num of function graphs in stack: 6

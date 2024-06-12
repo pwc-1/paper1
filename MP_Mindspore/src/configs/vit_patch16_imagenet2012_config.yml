@@ -1,0 +1,89 @@
+enable_modelarts: 0
+
+# Url for modelarts
+data_url: "/home/sjyjxz/dataset/ILSVRC2012/images"
+# train datasets
+dataset_path: '/home/sjyjxz/dataset/ILSVRC2012/images/train'
+train_image_size: 224
+interpolation: 'BILINEAR'
+crop_min: 0.05
+batch_size: 256
+
+
+# eval datasets
+eval_path: '/home/sjyjxz/dataset/ILSVRC2012/images/val'
+eval_image_size: 224
+eval_batch_size: 256
+eval_interval: 1
+eval_offset: -1
+eval_num_workers: 12
+
+# network
+vit_config_path: 'src.vit.VitConfig'
+pretrained: ''
+# loss
+
+use_label_smooth: 1
+label_smooth_factor: 0.1
+autoaugment: 1
+loss_name: "ce_smooth_mixup"
+
+# ckpt
+save_checkpoint_epochs: 1
+keep_checkpoint_max: 10
+save_checkpoint_path: './outputs'
+
+# profiler
+open_profiler: 0
+auto_augment: rand-m9-mstd0.5-inc1
+interpolation: bicubic
+re_prob: 0.25
+re_mode: pixel
+re_count: 1
+mixup_prob: 1.
+switch_prob: 0.5
+mixup_mode: batch
+
+# Architecture
+arch: vit_base_patch16
+
+# ===== Dataset ===== #
+data_url: /home/sjyjxz/dataset/ILSVRC2012/images
+set: ImageNet
+num_classes: 1000
+mix_up: 0.8
+cutmix: 1.0
+auto_augment: rand-m9-mstd0.5-inc1
+interpolation: bicubic
+re_prob: 0.25
+re_mode: pixel
+re_count: 1
+mixup_prob: 1.
+switch_prob: 0.5
+mixup_mode: batch
+# ===== Learning Rate Policy ======== #
+optimizer: adamw
+base_lr: 0.0001
+warmup_lr: 0.00000007
+min_lr: 0.000006
+lr_scheduler: cosine_lr
+warmup_length: 2
+nonlinearity: GELU
+
+
+# ===== Network training config ===== #
+amp_level: O0
+keep_bn_fp32: True
+beta: [ 0.9, 0.999 ]
+clip_global_norm_value: 5.
+is_dynamic_loss_scale: True
+epochs: 30
+label_smoothing: 0.1
+
+weight_decay: 0.05
+momentum: 0.9
+batch_size: 32
+tuning_mode: linear_probe
+# ===== Hardware setup ===== #
+num_parallel_workers: 16
+device_target: GPU

@@ -1,0 +1,1674 @@
+/home/ubuntu/anaconda3/envs/ybhbert2/bin/python /home/ubuntu/PycharmProjects/ybh/reverb/CLUE_main_reverb.py
+args.out_path: output/reverb_iter0_1
+args.reset: True
+dataset: reverb
+load Reverb45k_dataset ... 
+load side_info
+generate pre-trained embeddings
+oov rate: 0.0642859326418694 oov num: 439510 all num: 6836799
+oov rate: 0.0004123711340206186 oov num: 35 all num: 84875
+self.EL_seed: <class 'list'> 7260
+generate TransE embeddings ./file/reverb_iter1/1E_init
+self.training_time use pre-trained crawl embeddings ... 
+3004847
+7260
+10021
+2023-03-07 19:37:18,545 INFO     #train: 3004847
+2023-03-07 19:37:18,545 INFO     Model: TransE
+2023-03-07 19:37:18,545 INFO     #entity: 1798923
+2023-03-07 19:37:18,545 INFO     #relation: 23111
+2023-03-07 19:37:18,545 INFO     #train: 3004847
+2023-03-07 19:37:18,545 INFO     Model Parameter Configuration:
+2023-03-07 19:37:18,545 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-03-07 19:37:18,545 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-03-07 19:37:18,545 INFO     Parameter entity_embedding: torch.Size([1798923, 300]), require_grad = True
+2023-03-07 19:37:18,545 INFO     Parameter relation_embedding: torch.Size([23111, 300]), require_grad = True
+2023-03-07 19:38:00,550 INFO     Start Training...
+2023-03-07 19:38:00,550 INFO     init_step = 0
+2023-03-07 19:38:00,550 INFO     single_batch_size = 2048
+2023-03-07 19:38:00,550 INFO     single_negative_adversarial_sampling = 32
+2023-03-07 19:38:00,550 INFO     hidden_dim = 300
+2023-03-07 19:38:00,550 INFO     single_gamma = 12.000000
+2023-03-07 19:38:00,550 INFO     negative_adversarial_sampling = True
+2023-03-07 19:38:00,550 INFO     adversarial_temperature = 1.000000
+2023-03-07 19:38:00,550 INFO     self.p.use_cross_seed = 1.000000
+2023-03-07 19:38:00,550 INFO     self.p.update_seed = 0.000000
+2023-03-07 19:38:00,550 INFO     self.p.max_steps = 50000.000000
+2023-03-07 19:38:00,550 INFO     self.p.turn_to_seed = 1000.000000
+2023-03-07 19:38:00,550 INFO     self.p.seed_max_steps = 2000.000000
+2023-03-07 19:38:00,550 INFO     self.p.update_seed_steps = 6000.000000
+2023-03-07 19:38:00,550 INFO     learning_rate = 0
+2023-03-07 19:38:02,640 INFO     Training average regularization at step 0: 5453171.500000
+2023-03-07 19:38:02,640 INFO     Training average loss at step 0: 14112366.000000
+2023-03-07 19:38:59,656 INFO     Training average regularization at step 100: 5383211.685000
+2023-03-07 19:38:59,657 INFO     Training average loss at step 100: 13328079.880000
+2023-03-07 19:39:56,586 INFO     Training average regularization at step 200: 5263773.010000
+2023-03-07 19:39:56,586 INFO     Training average loss at step 200: 12879848.990000
+2023-03-07 19:40:53,668 INFO     Training average regularization at step 300: 5156407.145000
+2023-03-07 19:40:53,668 INFO     Training average loss at step 300: 12493281.920000
+2023-03-07 19:41:50,741 INFO     Training average regularization at step 400: 5056302.290000
+2023-03-07 19:41:50,741 INFO     Training average loss at step 400: 12078815.880000
+2023-03-07 19:42:47,697 INFO     Training average regularization at step 500: 4962015.985000
+2023-03-07 19:42:47,698 INFO     Training average loss at step 500: 11723846.160000
+2023-03-07 19:43:45,069 INFO     Training average regularization at step 600: 4872711.135000
+2023-03-07 19:43:45,069 INFO     Training average loss at step 600: 11350989.420000
+2023-03-07 19:44:42,123 INFO     Training average regularization at step 700: 4787841.415000
+2023-03-07 19:44:42,123 INFO     Training average loss at step 700: 11033594.680000
+2023-03-07 19:45:39,840 INFO     Training average regularization at step 800: 4706968.085000
+2023-03-07 19:45:39,840 INFO     Training average loss at step 800: 10682287.380000
+2023-03-07 19:46:37,055 INFO     Training average regularization at step 900: 4629726.935000
+2023-03-07 19:46:37,055 INFO     Training average loss at step 900: 10393246.630000
+2023-03-07 19:47:39,555 INFO     Training average regularization at step 1000: 4555774.745000
+2023-03-07 19:47:39,555 INFO     Training average loss at step 1000: 10072821.080000
+2023-03-07 19:48:36,952 INFO     Training average regularization at step 1100: 4484805.775000
+2023-03-07 19:48:36,952 INFO     Training average loss at step 1100: 9814124.620000
+2023-03-07 19:49:34,664 INFO     Training average regularization at step 1200: 4416584.910000
+2023-03-07 19:49:34,664 INFO     Training average loss at step 1200: 9526900.585000
+2023-03-07 19:50:31,921 INFO     Training average regularization at step 1300: 4350900.885000
+2023-03-07 19:50:31,922 INFO     Training average loss at step 1300: 9289998.870000
+2023-03-07 19:51:29,422 INFO     Training average regularization at step 1400: 4287571.750000
+2023-03-07 19:51:29,422 INFO     Training average loss at step 1400: 9024735.880000
+2023-03-07 19:52:26,796 INFO     Training average regularization at step 1500: 4226420.790000
+2023-03-07 19:52:26,797 INFO     Training average loss at step 1500: 8803534.565000
+2023-03-07 19:53:23,865 INFO     Training average regularization at step 1600: 4167263.777500
+2023-03-07 19:53:23,865 INFO     Training average loss at step 1600: 8561060.720000
+2023-03-07 19:54:26,232 INFO     Training average regularization at step 1700: 4109955.945000
+2023-03-07 19:54:26,233 INFO     Training average loss at step 1700: 8364013.870000
+2023-03-07 19:55:23,756 INFO     Training average regularization at step 1800: 4054357.152500
+2023-03-07 19:55:23,756 INFO     Training average loss at step 1800: 8146015.895000
+2023-03-07 19:56:21,473 INFO     Training average regularization at step 1900: 4000354.715000
+2023-03-07 19:56:21,473 INFO     Training average loss at step 1900: 7961161.000000
+2023-03-07 19:57:20,770 INFO     Training average regularization at step 2000: 3947805.220000
+2023-03-07 19:57:20,771 INFO     Training average loss at step 2000: 7764765.480000
+2023-03-07 19:58:18,709 INFO     Training average regularization at step 2100: 3896631.635000
+2023-03-07 19:58:18,709 INFO     Training average loss at step 2100: 7593355.935000
+2023-03-07 19:59:15,726 INFO     Training average regularization at step 2200: 3846737.377500
+2023-03-07 19:59:15,727 INFO     Training average loss at step 2200: 7410715.050000
+2023-03-07 20:00:13,631 INFO     Training average regularization at step 2300: 3798017.595000
+2023-03-07 20:00:13,631 INFO     Training average loss at step 2300: 7259260.545000
+2023-03-07 20:01:16,256 INFO     Training average regularization at step 2400: 3750428.820000
+2023-03-07 20:01:16,256 INFO     Training average loss at step 2400: 7085442.780000
+2023-03-07 20:02:13,235 INFO     Training average regularization at step 2500: 3703878.670000
+2023-03-07 20:02:13,235 INFO     Training average loss at step 2500: 6947756.510000
+2023-03-07 20:03:10,829 INFO     Training average regularization at step 2600: 3658298.790000
+2023-03-07 20:03:10,830 INFO     Training average loss at step 2600: 6785231.455000
+2023-03-07 20:04:07,825 INFO     Training average regularization at step 2700: 3613636.662500
+2023-03-07 20:04:07,825 INFO     Training average loss at step 2700: 6663834.210000
+2023-03-07 20:05:05,009 INFO     Training average regularization at step 2800: 3569825.095000
+2023-03-07 20:05:05,009 INFO     Training average loss at step 2800: 6514481.565000
+2023-03-07 20:06:02,646 INFO     Training average regularization at step 2900: 3526799.190000
+2023-03-07 20:06:02,646 INFO     Training average loss at step 2900: 6390809.495000
+2023-03-07 20:07:00,146 INFO     Training average regularization at step 3000: 3484492.017500
+2023-03-07 20:07:00,146 INFO     Training average loss at step 3000: 6266915.180000
+2023-03-07 20:07:57,392 INFO     Training average regularization at step 3100: 3442610.107500
+2023-03-07 20:07:57,392 INFO     Training average loss at step 3100: 6163781.100000
+2023-03-07 20:08:59,375 INFO     Training average regularization at step 3200: 3401004.595000
+2023-03-07 20:08:59,375 INFO     Training average loss at step 3200: 6042249.855000
+2023-03-07 20:09:56,567 INFO     Training average regularization at step 3300: 3359693.817500
+2023-03-07 20:09:56,568 INFO     Training average loss at step 3300: 5941921.665000
+2023-03-07 20:10:53,634 INFO     Training average regularization at step 3400: 3318737.447500
+2023-03-07 20:10:53,634 INFO     Training average loss at step 3400: 5819416.270000
+2023-03-07 20:11:51,052 INFO     Training average regularization at step 3500: 3278156.475000
+2023-03-07 20:11:51,052 INFO     Training average loss at step 3500: 5726690.715000
+2023-03-07 20:12:48,218 INFO     Training average regularization at step 3600: 3237988.732500
+2023-03-07 20:12:48,218 INFO     Training average loss at step 3600: 5607206.295000
+2023-03-07 20:13:45,887 INFO     Training average regularization at step 3700: 3198250.197500
+2023-03-07 20:13:45,887 INFO     Training average loss at step 3700: 5525766.205000
+2023-03-07 20:14:43,108 INFO     Training average regularization at step 3800: 3158955.557500
+2023-03-07 20:14:43,108 INFO     Training average loss at step 3800: 5417625.435000
+2023-03-07 20:15:45,303 INFO     Training average regularization at step 3900: 3120147.470000
+2023-03-07 20:15:45,304 INFO     Training average loss at step 3900: 5326518.565000
+2023-03-07 20:16:43,856 INFO     Training average regularization at step 4000: 3081820.977500
+2023-03-07 20:16:43,857 INFO     Training average loss at step 4000: 5226822.720000
+2023-03-07 20:17:41,814 INFO     Training average regularization at step 4100: 3044000.582500
+2023-03-07 20:17:41,814 INFO     Training average loss at step 4100: 5148236.230000
+2023-03-07 20:18:39,502 INFO     Training average regularization at step 4200: 3006704.967500
+2023-03-07 20:18:39,502 INFO     Training average loss at step 4200: 5060626.685000
+2023-03-07 20:19:36,937 INFO     Training average regularization at step 4300: 2969951.905000
+2023-03-07 20:19:36,937 INFO     Training average loss at step 4300: 4981150.800000
+2023-03-07 20:20:34,109 INFO     Training average regularization at step 4400: 2933753.140000
+2023-03-07 20:20:34,109 INFO     Training average loss at step 4400: 4886923.735000
+2023-03-07 20:21:32,462 INFO     Training average regularization at step 4500: 2898098.050000
+2023-03-07 20:21:32,462 INFO     Training average loss at step 4500: 4821927.015000
+2023-03-07 20:22:30,231 INFO     Training average regularization at step 4600: 2862994.775000
+2023-03-07 20:22:30,231 INFO     Training average loss at step 4600: 4743330.980000
+2023-03-07 20:23:28,644 INFO     Training average regularization at step 4700: 2828462.847500
+2023-03-07 20:23:28,644 INFO     Training average loss at step 4700: 4669669.430000
+2023-03-07 20:24:32,162 INFO     Training average regularization at step 4800: 2794511.780000
+2023-03-07 20:24:32,162 INFO     Training average loss at step 4800: 4584503.302500
+2023-03-07 20:25:30,189 INFO     Training average regularization at step 4900: 2761115.047500
+2023-03-07 20:25:30,189 INFO     Training average loss at step 4900: 4531122.475000
+2023-03-07 20:26:29,353 INFO     Training average regularization at step 5000: 2728279.872500
+2023-03-07 20:26:29,353 INFO     Training average loss at step 5000: 4452746.537500
+2023-03-07 20:27:28,299 INFO     Training average regularization at step 5100: 2695999.967500
+2023-03-07 20:27:28,299 INFO     Training average loss at step 5100: 4391432.415000
+2023-03-07 20:28:26,606 INFO     Training average regularization at step 5200: 2664280.075000
+2023-03-07 20:28:26,606 INFO     Training average loss at step 5200: 4318172.665000
+2023-03-07 20:29:26,080 INFO     Training average regularization at step 5300: 2633106.877500
+2023-03-07 20:29:26,080 INFO     Training average loss at step 5300: 4260645.280000
+2023-03-07 20:30:26,191 INFO     Training average regularization at step 5400: 2602469.117500
+2023-03-07 20:30:26,191 INFO     Training average loss at step 5400: 4190986.172500
+2023-03-07 20:31:28,771 INFO     Training average regularization at step 5500: 2572356.390000
+2023-03-07 20:31:28,771 INFO     Training average loss at step 5500: 4138924.122500
+2023-03-07 20:32:27,470 INFO     Training average regularization at step 5600: 2542744.272500
+2023-03-07 20:32:27,471 INFO     Training average loss at step 5600: 4072333.477500
+2023-03-07 20:33:25,368 INFO     Training average regularization at step 5700: 2513631.467500
+2023-03-07 20:33:25,368 INFO     Training average loss at step 5700: 4025089.007500
+2023-03-07 20:34:24,578 INFO     Training average regularization at step 5800: 2485017.992500
+2023-03-07 20:34:24,579 INFO     Training average loss at step 5800: 3963129.075000
+2023-03-07 20:35:22,307 INFO     Training average regularization at step 5900: 2456888.235000
+2023-03-07 20:35:22,307 INFO     Training average loss at step 5900: 3900091.997500
+2023-03-07 20:36:19,158 INFO     Training average regularization at step 6000: 2429092.150000
+2023-03-07 20:36:19,158 INFO     Training average loss at step 6000: 3847465.995000
+2023-03-07 20:37:15,966 INFO     Training average regularization at step 6100: 2401429.355000
+2023-03-07 20:37:15,966 INFO     Training average loss at step 6100: 3806820.077500
+2023-03-07 20:38:12,734 INFO     Training average regularization at step 6200: 2373895.762500
+2023-03-07 20:38:12,734 INFO     Training average loss at step 6200: 3747082.992500
+2023-03-07 20:39:14,341 INFO     Training average regularization at step 6300: 2346538.937500
+2023-03-07 20:39:14,341 INFO     Training average loss at step 6300: 3696985.985000
+2023-03-07 20:40:11,002 INFO     Training average regularization at step 6400: 2319363.812500
+2023-03-07 20:40:11,002 INFO     Training average loss at step 6400: 3649304.747500
+2023-03-07 20:41:07,883 INFO     Training average regularization at step 6500: 2292392.727500
+2023-03-07 20:41:07,883 INFO     Training average loss at step 6500: 3602072.175000
+2023-03-07 20:42:06,473 INFO     Training average regularization at step 6600: 2265654.095000
+2023-03-07 20:42:06,473 INFO     Training average loss at step 6600: 3550700.402500
+2023-03-07 20:43:05,093 INFO     Training average regularization at step 6700: 2239166.447500
+2023-03-07 20:43:05,093 INFO     Training average loss at step 6700: 3508335.557500
+2023-03-07 20:44:02,919 INFO     Training average regularization at step 6800: 2212948.527500
+2023-03-07 20:44:02,919 INFO     Training average loss at step 6800: 3458076.237500
+2023-03-07 20:45:00,702 INFO     Training average regularization at step 6900: 2187027.557500
+2023-03-07 20:45:00,702 INFO     Training average loss at step 6900: 3415551.537500
+2023-03-07 20:46:03,289 INFO     Training average regularization at step 7000: 2161416.992500
+2023-03-07 20:46:03,290 INFO     Training average loss at step 7000: 3368475.195000
+2023-03-07 20:47:01,205 INFO     Training average regularization at step 7100: 2136125.607500
+2023-03-07 20:47:01,205 INFO     Training average loss at step 7100: 3331582.070000
+2023-03-07 20:47:58,949 INFO     Training average regularization at step 7200: 2111163.147500
+2023-03-07 20:47:58,949 INFO     Training average loss at step 7200: 3274182.487500
+2023-03-07 20:48:56,596 INFO     Training average regularization at step 7300: 2086540.032500
+2023-03-07 20:48:56,597 INFO     Training average loss at step 7300: 3240650.092500
+2023-03-07 20:49:54,275 INFO     Training average regularization at step 7400: 2062257.538750
+2023-03-07 20:49:54,275 INFO     Training average loss at step 7400: 3200120.150000
+2023-03-07 20:50:51,930 INFO     Training average regularization at step 7500: 2038335.803750
+2023-03-07 20:50:51,930 INFO     Training average loss at step 7500: 3163469.045000
+2023-03-07 20:51:49,514 INFO     Training average regularization at step 7600: 2014797.323750
+2023-03-07 20:51:49,514 INFO     Training average loss at step 7600: 3115678.902500
+2023-03-07 20:52:52,478 INFO     Training average regularization at step 7700: 1991628.632500
+2023-03-07 20:52:52,479 INFO     Training average loss at step 7700: 3077924.600000
+2023-03-07 20:53:50,039 INFO     Training average regularization at step 7800: 1968824.417500
+2023-03-07 20:53:50,039 INFO     Training average loss at step 7800: 3038472.937500
+2023-03-07 20:54:47,992 INFO     Training average regularization at step 7900: 1946399.011250
+2023-03-07 20:54:47,992 INFO     Training average loss at step 7900: 3005335.675000
+2023-03-07 20:55:45,460 INFO     Training average regularization at step 8000: 1924351.825000
+2023-03-07 20:55:45,460 INFO     Training average loss at step 8000: 2967183.605000
+2023-03-07 20:56:43,230 INFO     Training average regularization at step 8100: 1902684.706250
+2023-03-07 20:56:43,230 INFO     Training average loss at step 8100: 2932281.830000
+2023-03-07 20:57:40,727 INFO     Training average regularization at step 8200: 1881393.063750
+2023-03-07 20:57:40,727 INFO     Training average loss at step 8200: 2888035.175000
+2023-03-07 20:58:38,305 INFO     Training average regularization at step 8300: 1860461.155000
+2023-03-07 20:58:38,306 INFO     Training average loss at step 8300: 2858857.450000
+2023-03-07 20:59:40,697 INFO     Training average regularization at step 8400: 1839884.782500
+2023-03-07 20:59:40,697 INFO     Training average loss at step 8400: 2825340.220000
+2023-03-07 21:00:38,392 INFO     Training average regularization at step 8500: 1819681.638750
+2023-03-07 21:00:38,392 INFO     Training average loss at step 8500: 2794206.392500
+2023-03-07 21:01:36,855 INFO     Training average regularization at step 8600: 1799838.821250
+2023-03-07 21:01:36,855 INFO     Training average loss at step 8600: 2754522.320000
+2023-03-07 21:02:34,878 INFO     Training average regularization at step 8700: 1780343.118750
+2023-03-07 21:02:34,878 INFO     Training average loss at step 8700: 2726733.217500
+2023-03-07 21:03:32,505 INFO     Training average regularization at step 8800: 1761188.058750
+2023-03-07 21:03:32,505 INFO     Training average loss at step 8800: 2690731.082500
+2023-03-07 21:04:30,634 INFO     Training average regularization at step 8900: 1742320.537500
+2023-03-07 21:04:30,635 INFO     Training average loss at step 8900: 2648872.105000
+2023-03-07 21:05:28,274 INFO     Training average regularization at step 9000: 1723553.880000
+2023-03-07 21:05:28,274 INFO     Training average loss at step 9000: 2625742.510000
+2023-03-07 21:06:26,156 INFO     Training average regularization at step 9100: 1704839.686250
+2023-03-07 21:06:26,156 INFO     Training average loss at step 9100: 2596229.505000
+2023-03-07 21:07:28,488 INFO     Training average regularization at step 9200: 1686218.523750
+2023-03-07 21:07:28,489 INFO     Training average loss at step 9200: 2562830.590000
+2023-03-07 21:08:26,166 INFO     Training average regularization at step 9300: 1667689.852500
+2023-03-07 21:08:26,166 INFO     Training average loss at step 9300: 2535018.995000
+2023-03-07 21:09:23,718 INFO     Training average regularization at step 9400: 1649281.880000
+2023-03-07 21:09:23,718 INFO     Training average loss at step 9400: 2501785.630000
+2023-03-07 21:10:21,374 INFO     Training average regularization at step 9500: 1631001.925000
+2023-03-07 21:10:21,374 INFO     Training average loss at step 9500: 2479665.827500
+2023-03-07 21:11:18,973 INFO     Training average regularization at step 9600: 1612872.941250
+2023-03-07 21:11:18,973 INFO     Training average loss at step 9600: 2446367.842500
+2023-03-07 21:12:16,628 INFO     Training average regularization at step 9700: 1594916.062500
+2023-03-07 21:12:16,628 INFO     Training average loss at step 9700: 2420460.630000
+2023-03-07 21:13:19,102 INFO     Training average regularization at step 9800: 1577136.055000
+2023-03-07 21:13:19,102 INFO     Training average loss at step 9800: 2388220.707500
+2023-03-07 21:14:16,897 INFO     Training average regularization at step 9900: 1559548.238750
+2023-03-07 21:14:16,897 INFO     Training average loss at step 9900: 2363599.107500
+2023-03-07 21:15:15,225 INFO     Training average regularization at step 10000: 1542162.851250
+2023-03-07 21:15:15,225 INFO     Training average loss at step 10000: 2336108.687500
+2023-03-07 21:16:13,135 INFO     Training average regularization at step 10100: 1524994.882500
+2023-03-07 21:16:13,135 INFO     Training average loss at step 10100: 2315693.312500
+2023-03-07 21:17:10,921 INFO     Training average regularization at step 10200: 1508059.997500
+2023-03-07 21:17:10,921 INFO     Training average loss at step 10200: 2284892.272500
+2023-03-07 21:18:09,087 INFO     Training average regularization at step 10300: 1491363.957500
+2023-03-07 21:18:09,087 INFO     Training average loss at step 10300: 2261072.065000
+2023-03-07 21:19:06,723 INFO     Training average regularization at step 10400: 1474922.646250
+2023-03-07 21:19:06,723 INFO     Training average loss at step 10400: 2230530.020000
+2023-03-07 21:20:05,027 INFO     Training average regularization at step 10500: 1458746.785000
+2023-03-07 21:20:05,027 INFO     Training average loss at step 10500: 2211142.527500
+2023-03-07 21:21:07,662 INFO     Training average regularization at step 10600: 1442829.513750
+2023-03-07 21:21:07,662 INFO     Training average loss at step 10600: 2181062.371250
+2023-03-07 21:22:05,417 INFO     Training average regularization at step 10700: 1427167.271250
+2023-03-07 21:22:05,417 INFO     Training average loss at step 10700: 2160707.418750
+2023-03-07 21:23:03,561 INFO     Training average regularization at step 10800: 1411773.552500
+2023-03-07 21:23:03,561 INFO     Training average loss at step 10800: 2133016.217500
+2023-03-07 21:24:02,961 INFO     Training average regularization at step 10900: 1396655.300000
+2023-03-07 21:24:02,962 INFO     Training average loss at step 10900: 2108207.646250
+2023-03-07 21:25:01,150 INFO     Training average regularization at step 11000: 1381791.065000
+2023-03-07 21:25:01,150 INFO     Training average loss at step 11000: 2090026.280000
+2023-03-07 21:25:59,038 INFO     Training average regularization at step 11100: 1367195.327500
+2023-03-07 21:25:59,038 INFO     Training average loss at step 11100: 2067348.417500
+2023-03-07 21:26:57,251 INFO     Training average regularization at step 11200: 1352865.177500
+2023-03-07 21:26:57,252 INFO     Training average loss at step 11200: 2042396.915000
+2023-03-07 21:28:00,014 INFO     Training average regularization at step 11300: 1338805.162500
+2023-03-07 21:28:00,014 INFO     Training average loss at step 11300: 2020424.441250
+2023-03-07 21:28:57,769 INFO     Training average regularization at step 11400: 1325005.792500
+2023-03-07 21:28:57,769 INFO     Training average loss at step 11400: 1997145.603750
+2023-03-07 21:29:55,545 INFO     Training average regularization at step 11500: 1311465.947500
+2023-03-07 21:29:55,545 INFO     Training average loss at step 11500: 1974137.673750
+2023-03-07 21:30:53,212 INFO     Training average regularization at step 11600: 1298174.203750
+2023-03-07 21:30:53,213 INFO     Training average loss at step 11600: 1957330.583750
+2023-03-07 21:31:51,094 INFO     Training average regularization at step 11700: 1285123.221250
+2023-03-07 21:31:51,095 INFO     Training average loss at step 11700: 1935954.388750
+2023-03-07 21:32:49,239 INFO     Training average regularization at step 11800: 1272301.581250
+2023-03-07 21:32:49,239 INFO     Training average loss at step 11800: 1906584.355000
+2023-03-07 21:33:46,973 INFO     Training average regularization at step 11900: 1259586.632500
+2023-03-07 21:33:46,973 INFO     Training average loss at step 11900: 1889883.965000
+2023-03-07 21:34:49,389 INFO     Training average regularization at step 12000: 1246887.605000
+2023-03-07 21:34:49,389 INFO     Training average loss at step 12000: 1866514.351250
+2023-03-07 21:35:47,191 INFO     Training average regularization at step 12100: 1234220.576250
+2023-03-07 21:35:47,191 INFO     Training average loss at step 12100: 1847453.786250
+2023-03-07 21:36:45,006 INFO     Training average regularization at step 12200: 1221604.006250
+2023-03-07 21:36:45,007 INFO     Training average loss at step 12200: 1828065.290000
+2023-03-07 21:37:42,709 INFO     Training average regularization at step 12300: 1209044.561250
+2023-03-07 21:37:42,709 INFO     Training average loss at step 12300: 1810026.173750
+2023-03-07 21:38:40,321 INFO     Training average regularization at step 12400: 1196555.778750
+2023-03-07 21:38:40,321 INFO     Training average loss at step 12400: 1791628.488750
+2023-03-07 21:39:38,031 INFO     Training average regularization at step 12500: 1184150.692500
+2023-03-07 21:39:38,031 INFO     Training average loss at step 12500: 1775122.593750
+2023-03-07 21:40:35,662 INFO     Training average regularization at step 12600: 1171845.053750
+2023-03-07 21:40:35,662 INFO     Training average loss at step 12600: 1752779.147500
+2023-03-07 21:41:33,367 INFO     Training average regularization at step 12700: 1159650.681250
+2023-03-07 21:41:33,368 INFO     Training average loss at step 12700: 1739432.742500
+2023-03-07 21:42:31,592 INFO     Training average regularization at step 12800: 1147577.461250
+2023-03-07 21:42:31,593 INFO     Training average loss at step 12800: 1715448.775000
+2023-03-07 21:43:34,106 INFO     Training average regularization at step 12900: 1135637.891250
+2023-03-07 21:43:34,107 INFO     Training average loss at step 12900: 1703584.771250
+2023-03-07 21:44:31,776 INFO     Training average regularization at step 13000: 1123837.840000
+2023-03-07 21:44:31,776 INFO     Training average loss at step 13000: 1681186.723750
+2023-03-07 21:45:29,498 INFO     Training average regularization at step 13100: 1112189.557500
+2023-03-07 21:45:29,498 INFO     Training average loss at step 13100: 1665750.685000
+2023-03-07 21:46:27,118 INFO     Training average regularization at step 13200: 1100700.910000
+2023-03-07 21:46:27,118 INFO     Training average loss at step 13200: 1648065.673750
+2023-03-07 21:47:24,850 INFO     Training average regularization at step 13300: 1089374.257500
+2023-03-07 21:47:24,851 INFO     Training average loss at step 13300: 1629910.297500
+2023-03-07 21:48:22,527 INFO     Training average regularization at step 13400: 1078217.591250
+2023-03-07 21:48:22,527 INFO     Training average loss at step 13400: 1611926.695000
+2023-03-07 21:49:20,320 INFO     Training average regularization at step 13500: 1067237.546250
+2023-03-07 21:49:20,320 INFO     Training average loss at step 13500: 1596389.131250
+2023-03-07 21:50:22,696 INFO     Training average regularization at step 13600: 1056436.272500
+2023-03-07 21:50:22,696 INFO     Training average loss at step 13600: 1578629.958750
+2023-03-07 21:51:20,438 INFO     Training average regularization at step 13700: 1045822.748750
+2023-03-07 21:51:20,438 INFO     Training average loss at step 13700: 1564285.630000
+2023-03-07 21:52:17,907 INFO     Training average regularization at step 13800: 1035391.558125
+2023-03-07 21:52:17,907 INFO     Training average loss at step 13800: 1546800.150000
+2023-03-07 21:53:15,666 INFO     Training average regularization at step 13900: 1025152.387500
+2023-03-07 21:53:15,666 INFO     Training average loss at step 13900: 1533476.768750
+2023-03-07 21:54:13,395 INFO     Training average regularization at step 14000: 1015100.035000
+2023-03-07 21:54:13,395 INFO     Training average loss at step 14000: 1520897.997500
+2023-03-07 21:55:11,551 INFO     Training average regularization at step 14100: 1005235.601875
+2023-03-07 21:55:11,551 INFO     Training average loss at step 14100: 1502493.993750
+2023-03-07 21:56:09,878 INFO     Training average regularization at step 14200: 995569.416250
+2023-03-07 21:56:09,878 INFO     Training average loss at step 14200: 1486768.262500
+2023-03-07 21:57:13,239 INFO     Training average regularization at step 14300: 986082.864375
+2023-03-07 21:57:13,239 INFO     Training average loss at step 14300: 1475239.235000
+2023-03-07 21:58:12,040 INFO     Training average regularization at step 14400: 976782.398125
+2023-03-07 21:58:12,040 INFO     Training average loss at step 14400: 1458758.277500
+2023-03-07 21:59:11,717 INFO     Training average regularization at step 14500: 967666.042500
+2023-03-07 21:59:11,717 INFO     Training average loss at step 14500: 1447056.180000
+2023-03-07 22:00:10,710 INFO     Training average regularization at step 14600: 958736.196875
+2023-03-07 22:00:10,710 INFO     Training average loss at step 14600: 1429074.523750
+2023-03-07 22:01:11,005 INFO     Training average regularization at step 14700: 949978.342500
+2023-03-07 22:01:11,005 INFO     Training average loss at step 14700: 1409812.676250
+2023-03-07 22:02:09,501 INFO     Training average regularization at step 14800: 941323.000000
+2023-03-07 22:02:09,501 INFO     Training average loss at step 14800: 1396510.747500
+2023-03-07 22:03:08,284 INFO     Training average regularization at step 14900: 932675.750000
+2023-03-07 22:03:08,284 INFO     Training average loss at step 14900: 1383429.350000
+2023-03-07 22:04:06,796 INFO     Training average regularization at step 15000: 924033.875625
+2023-03-07 22:04:06,796 INFO     Training average loss at step 15000: 1370727.871250
+2023-03-07 22:05:09,923 INFO     Training average regularization at step 15100: 915408.865625
+2023-03-07 22:05:09,923 INFO     Training average loss at step 15100: 1357632.632500
+2023-03-07 22:06:08,090 INFO     Training average regularization at step 15200: 906807.725625
+2023-03-07 22:06:08,091 INFO     Training average loss at step 15200: 1347900.608750
+2023-03-07 22:07:06,350 INFO     Training average regularization at step 15300: 898237.738125
+2023-03-07 22:07:06,350 INFO     Training average loss at step 15300: 1334702.205000
+2023-03-07 22:08:04,446 INFO     Training average regularization at step 15400: 889714.566250
+2023-03-07 22:08:04,447 INFO     Training average loss at step 15400: 1319123.503750
+2023-03-07 22:09:02,601 INFO     Training average regularization at step 15500: 881251.615000
+2023-03-07 22:09:02,602 INFO     Training average loss at step 15500: 1306595.188750
+2023-03-07 22:10:00,757 INFO     Training average regularization at step 15600: 872848.878750
+2023-03-07 22:10:00,757 INFO     Training average loss at step 15600: 1295929.700000
+2023-03-07 22:10:58,968 INFO     Training average regularization at step 15700: 864519.100000
+2023-03-07 22:10:58,968 INFO     Training average loss at step 15700: 1284809.860000
+2023-03-07 22:11:57,071 INFO     Training average regularization at step 15800: 856267.871250
+2023-03-07 22:11:57,071 INFO     Training average loss at step 15800: 1272369.075000
+2023-03-07 22:12:59,659 INFO     Training average regularization at step 15900: 848103.246875
+2023-03-07 22:12:59,659 INFO     Training average loss at step 15900: 1256344.345000
+2023-03-07 22:13:57,261 INFO     Training average regularization at step 16000: 840035.440000
+2023-03-07 22:13:57,261 INFO     Training average loss at step 16000: 1243167.068750
+2023-03-07 22:14:54,882 INFO     Training average regularization at step 16100: 832066.730000
+2023-03-07 22:14:54,882 INFO     Training average loss at step 16100: 1238219.517500
+2023-03-07 22:15:52,458 INFO     Training average regularization at step 16200: 824204.407500
+2023-03-07 22:15:52,458 INFO     Training average loss at step 16200: 1221988.502500
+2023-03-07 22:16:50,148 INFO     Training average regularization at step 16300: 816453.634375
+2023-03-07 22:16:50,148 INFO     Training average loss at step 16300: 1209353.353750
+2023-03-07 22:17:48,006 INFO     Training average regularization at step 16400: 808817.322500
+2023-03-07 22:17:48,006 INFO     Training average loss at step 16400: 1200559.936250
+2023-03-07 22:18:45,817 INFO     Training average regularization at step 16500: 801297.596250
+2023-03-07 22:18:45,817 INFO     Training average loss at step 16500: 1192471.591250
+2023-03-07 22:19:43,381 INFO     Training average regularization at step 16600: 793903.359375
+2023-03-07 22:19:43,381 INFO     Training average loss at step 16600: 1179468.140625
+2023-03-07 22:20:46,461 INFO     Training average regularization at step 16700: 786641.145625
+2023-03-07 22:20:46,461 INFO     Training average loss at step 16700: 1170016.687500
+2023-03-07 22:21:44,129 INFO     Training average regularization at step 16800: 779512.420000
+2023-03-07 22:21:44,129 INFO     Training average loss at step 16800: 1156195.347500
+2023-03-07 22:22:41,692 INFO     Training average regularization at step 16900: 772523.255000
+2023-03-07 22:22:41,692 INFO     Training average loss at step 16900: 1148733.205625
+2023-03-07 22:23:39,359 INFO     Training average regularization at step 17000: 765665.040000
+2023-03-07 22:23:39,360 INFO     Training average loss at step 17000: 1134999.743125
+2023-03-07 22:24:37,518 INFO     Training average regularization at step 17100: 758941.391250
+2023-03-07 22:24:37,518 INFO     Training average loss at step 17100: 1127720.035625
+2023-03-07 22:25:35,091 INFO     Training average regularization at step 17200: 752354.920000
+2023-03-07 22:25:35,092 INFO     Training average loss at step 17200: 1116862.876875
+2023-03-07 22:26:32,930 INFO     Training average regularization at step 17300: 745904.993125
+2023-03-07 22:26:32,931 INFO     Training average loss at step 17300: 1106450.565625
+2023-03-07 22:27:36,098 INFO     Training average regularization at step 17400: 739582.974375
+2023-03-07 22:27:36,098 INFO     Training average loss at step 17400: 1098534.205000
+2023-03-07 22:28:36,378 INFO     Training average regularization at step 17500: 733389.061875
+2023-03-07 22:28:36,378 INFO     Training average loss at step 17500: 1088417.786875
+2023-03-07 22:29:35,913 INFO     Training average regularization at step 17600: 727323.331250
+2023-03-07 22:29:35,913 INFO     Training average loss at step 17600: 1080996.708125
+2023-03-07 22:30:36,353 INFO     Training average regularization at step 17700: 721360.183750
+2023-03-07 22:30:36,353 INFO     Training average loss at step 17700: 1058376.208750
+2023-03-07 22:31:37,220 INFO     Training average regularization at step 17800: 715405.394375
+2023-03-07 22:31:37,220 INFO     Training average loss at step 17800: 1050705.279375
+2023-03-07 22:32:37,253 INFO     Training average regularization at step 17900: 709437.161875
+2023-03-07 22:32:37,253 INFO     Training average loss at step 17900: 1044813.107500
+2023-03-07 22:33:37,086 INFO     Training average regularization at step 18000: 703460.830000
+2023-03-07 22:33:37,087 INFO     Training average loss at step 18000: 1033621.810000
+2023-03-07 22:34:35,617 INFO     Training average regularization at step 18100: 697490.647500
+2023-03-07 22:34:35,618 INFO     Training average loss at step 18100: 1025643.140000
+2023-03-07 22:35:38,545 INFO     Training average regularization at step 18200: 691534.266875
+2023-03-07 22:35:38,545 INFO     Training average loss at step 18200: 1021635.861250
+2023-03-07 22:36:36,224 INFO     Training average regularization at step 18300: 685599.323750
+2023-03-07 22:36:36,224 INFO     Training average loss at step 18300: 1008669.748750
+2023-03-07 22:37:35,023 INFO     Training average regularization at step 18400: 679690.378750
+2023-03-07 22:37:35,023 INFO     Training average loss at step 18400: 1000707.073125
+2023-03-07 22:38:33,914 INFO     Training average regularization at step 18500: 673813.981875
+2023-03-07 22:38:33,914 INFO     Training average loss at step 18500: 993644.715000
+2023-03-07 22:39:32,376 INFO     Training average regularization at step 18600: 667980.278125
+2023-03-07 22:39:32,376 INFO     Training average loss at step 18600: 983206.968750
+2023-03-07 22:40:31,140 INFO     Training average regularization at step 18700: 662195.098750
+2023-03-07 22:40:31,140 INFO     Training average loss at step 18700: 977394.601250
+2023-03-07 22:41:30,542 INFO     Training average regularization at step 18800: 656459.786250
+2023-03-07 22:41:30,542 INFO     Training average loss at step 18800: 967938.905000
+2023-03-07 22:42:34,610 INFO     Training average regularization at step 18900: 650785.063125
+2023-03-07 22:42:34,611 INFO     Training average loss at step 18900: 960880.183125
+2023-03-07 22:43:32,832 INFO     Training average regularization at step 19000: 645178.133750
+2023-03-07 22:43:32,832 INFO     Training average loss at step 19000: 951561.650000
+2023-03-07 22:44:30,725 INFO     Training average regularization at step 19100: 639642.076875
+2023-03-07 22:44:30,725 INFO     Training average loss at step 19100: 944707.951250
+2023-03-07 22:45:29,723 INFO     Training average regularization at step 19200: 634177.211875
+2023-03-07 22:45:29,723 INFO     Training average loss at step 19200: 935930.908750
+2023-03-07 22:46:28,889 INFO     Training average regularization at step 19300: 628790.539375
+2023-03-07 22:46:28,889 INFO     Training average loss at step 19300: 927821.227500
+2023-03-07 22:47:27,568 INFO     Training average regularization at step 19400: 623489.083125
+2023-03-07 22:47:27,568 INFO     Training average loss at step 19400: 923147.596250
+2023-03-07 22:48:25,865 INFO     Training average regularization at step 19500: 618275.240000
+2023-03-07 22:48:25,865 INFO     Training average loss at step 19500: 912938.476250
+2023-03-07 22:49:23,766 INFO     Training average regularization at step 19600: 613155.823750
+2023-03-07 22:49:23,766 INFO     Training average loss at step 19600: 906331.901250
+2023-03-07 22:50:21,681 INFO     Training average regularization at step 19700: 608126.803125
+2023-03-07 22:50:21,681 INFO     Training average loss at step 19700: 899620.308125
+2023-03-07 22:51:25,244 INFO     Training average regularization at step 19800: 603193.163125
+2023-03-07 22:51:25,244 INFO     Training average loss at step 19800: 895552.216250
+2023-03-07 22:52:24,160 INFO     Training average regularization at step 19900: 598357.145000
+2023-03-07 22:52:24,161 INFO     Training average loss at step 19900: 885412.486250
+2023-03-07 22:53:22,614 INFO     Training average regularization at step 20000: 593617.023750
+2023-03-07 22:53:22,614 INFO     Training average loss at step 20000: 879536.632500
+2023-03-07 22:54:20,820 INFO     Training average regularization at step 20100: 588977.285625
+2023-03-07 22:54:20,820 INFO     Training average loss at step 20100: 872600.676875
+2023-03-07 22:55:18,474 INFO     Training average regularization at step 20200: 584438.042500
+2023-03-07 22:55:18,474 INFO     Training average loss at step 20200: 863324.871875
+2023-03-07 22:56:16,541 INFO     Training average regularization at step 20300: 579994.913750
+2023-03-07 22:56:16,541 INFO     Training average loss at step 20300: 857324.088750
+2023-03-07 22:57:15,239 INFO     Training average regularization at step 20400: 575645.431875
+2023-03-07 22:57:15,239 INFO     Training average loss at step 20400: 850990.978125
+2023-03-07 22:58:18,867 INFO     Training average regularization at step 20500: 571390.587500
+2023-03-07 22:58:18,868 INFO     Training average loss at step 20500: 847100.020000
+2023-03-07 22:59:18,007 INFO     Training average regularization at step 20600: 567222.186250
+2023-03-07 22:59:18,007 INFO     Training average loss at step 20600: 830866.613750
+2023-03-07 23:00:16,350 INFO     Training average regularization at step 20700: 563070.968125
+2023-03-07 23:00:16,350 INFO     Training average loss at step 20700: 823753.701250
+2023-03-07 23:01:14,208 INFO     Training average regularization at step 20800: 558907.165000
+2023-03-07 23:01:14,208 INFO     Training average loss at step 20800: 818897.550000
+2023-03-07 23:02:11,806 INFO     Training average regularization at step 20900: 554730.916875
+2023-03-07 23:02:11,807 INFO     Training average loss at step 20900: 815329.837500
+2023-03-07 23:03:09,198 INFO     Training average regularization at step 21000: 550550.955000
+2023-03-07 23:03:09,199 INFO     Training average loss at step 21000: 804385.313750
+2023-03-07 23:04:06,975 INFO     Training average regularization at step 21100: 546368.134375
+2023-03-07 23:04:06,976 INFO     Training average loss at step 21100: 802360.425000
+2023-03-07 23:05:04,406 INFO     Training average regularization at step 21200: 542189.158750
+2023-03-07 23:05:04,406 INFO     Training average loss at step 21200: 795816.815000
+2023-03-07 23:06:06,711 INFO     Training average regularization at step 21300: 538024.417500
+2023-03-07 23:06:06,711 INFO     Training average loss at step 21300: 787975.695625
+2023-03-07 23:07:04,505 INFO     Training average regularization at step 21400: 533873.718125
+2023-03-07 23:07:04,506 INFO     Training average loss at step 21400: 784720.275000
+2023-03-07 23:08:02,038 INFO     Training average regularization at step 21500: 529744.311250
+2023-03-07 23:08:02,038 INFO     Training average loss at step 21500: 777837.980000
+2023-03-07 23:08:59,586 INFO     Training average regularization at step 21600: 525641.587500
+2023-03-07 23:08:59,587 INFO     Training average loss at step 21600: 770434.232500
+2023-03-07 23:09:57,231 INFO     Training average regularization at step 21700: 521568.215625
+2023-03-07 23:09:57,231 INFO     Training average loss at step 21700: 766665.644375
+2023-03-07 23:10:54,908 INFO     Training average regularization at step 21800: 517531.017813
+2023-03-07 23:10:54,909 INFO     Training average loss at step 21800: 758055.566875
+2023-03-07 23:11:52,579 INFO     Training average regularization at step 21900: 513536.545000
+2023-03-07 23:11:52,579 INFO     Training average loss at step 21900: 753375.368750
+2023-03-07 23:12:54,899 INFO     Training average regularization at step 22000: 509583.219687
+2023-03-07 23:12:54,899 INFO     Training average loss at step 22000: 749216.154375
+2023-03-07 23:13:52,553 INFO     Training average regularization at step 22100: 505675.963438
+2023-03-07 23:13:52,553 INFO     Training average loss at step 22100: 744189.143125
+2023-03-07 23:14:50,075 INFO     Training average regularization at step 22200: 501820.656250
+2023-03-07 23:14:50,075 INFO     Training average loss at step 22200: 738907.321875
+2023-03-07 23:15:47,607 INFO     Training average regularization at step 22300: 498024.044375
+2023-03-07 23:15:47,607 INFO     Training average loss at step 22300: 731566.966875
+2023-03-07 23:16:45,110 INFO     Training average regularization at step 22400: 494289.280938
+2023-03-07 23:16:45,111 INFO     Training average loss at step 22400: 727984.827500
+2023-03-07 23:17:42,861 INFO     Training average regularization at step 22500: 490616.658750
+2023-03-07 23:17:42,862 INFO     Training average loss at step 22500: 724428.556875
+2023-03-07 23:18:40,502 INFO     Training average regularization at step 22600: 487008.976875
+2023-03-07 23:18:40,502 INFO     Training average loss at step 22600: 717629.692500
+2023-03-07 23:19:42,938 INFO     Training average regularization at step 22700: 483466.252188
+2023-03-07 23:19:42,938 INFO     Training average loss at step 22700: 712349.660625
+2023-03-07 23:20:40,525 INFO     Training average regularization at step 22800: 479993.670625
+2023-03-07 23:20:40,526 INFO     Training average loss at step 22800: 708587.653750
+2023-03-07 23:21:38,149 INFO     Training average regularization at step 22900: 476590.322500
+2023-03-07 23:21:38,149 INFO     Training average loss at step 22900: 704087.572500
+2023-03-07 23:22:35,669 INFO     Training average regularization at step 23000: 473257.151562
+2023-03-07 23:22:35,670 INFO     Training average loss at step 23000: 697755.500625
+2023-03-07 23:23:33,338 INFO     Training average regularization at step 23100: 469997.168438
+2023-03-07 23:23:33,338 INFO     Training average loss at step 23100: 691882.640000
+2023-03-07 23:24:30,869 INFO     Training average regularization at step 23200: 466803.961562
+2023-03-07 23:24:30,869 INFO     Training average loss at step 23200: 689269.135000
+2023-03-07 23:25:28,571 INFO     Training average regularization at step 23300: 463682.690312
+2023-03-07 23:25:28,572 INFO     Training average loss at step 23300: 682670.945625
+2023-03-07 23:26:31,063 INFO     Training average regularization at step 23400: 460627.700000
+2023-03-07 23:26:31,063 INFO     Training average loss at step 23400: 679166.748750
+2023-03-07 23:27:29,729 INFO     Training average regularization at step 23500: 457637.056250
+2023-03-07 23:27:29,730 INFO     Training average loss at step 23500: 672265.998125
+2023-03-07 23:28:27,863 INFO     Training average regularization at step 23600: 454676.659687
+2023-03-07 23:28:27,863 INFO     Training average loss at step 23600: 661274.923750
+2023-03-07 23:29:25,994 INFO     Training average regularization at step 23700: 451698.663125
+2023-03-07 23:29:25,995 INFO     Training average loss at step 23700: 658588.103125
+2023-03-07 23:30:24,077 INFO     Training average regularization at step 23800: 448706.955625
+2023-03-07 23:30:24,077 INFO     Training average loss at step 23800: 654305.682500
+2023-03-07 23:31:24,123 INFO     Training average regularization at step 23900: 445702.994688
+2023-03-07 23:31:24,124 INFO     Training average loss at step 23900: 649453.751250
+2023-03-07 23:32:22,421 INFO     Training average regularization at step 24000: 442693.518750
+2023-03-07 23:32:22,422 INFO     Training average loss at step 24000: 644462.305625
+2023-03-07 23:33:20,876 INFO     Training average regularization at step 24100: 439679.307500
+2023-03-07 23:33:20,876 INFO     Training average loss at step 24100: 643878.206250
+2023-03-07 23:34:23,507 INFO     Training average regularization at step 24200: 436665.773125
+2023-03-07 23:34:23,507 INFO     Training average loss at step 24200: 635705.819375
+2023-03-07 23:35:21,014 INFO     Training average regularization at step 24300: 433660.221250
+2023-03-07 23:35:21,014 INFO     Training average loss at step 24300: 633602.991875
+2023-03-07 23:36:18,407 INFO     Training average regularization at step 24400: 430664.361563
+2023-03-07 23:36:18,407 INFO     Training average loss at step 24400: 629670.708750
+2023-03-07 23:37:16,037 INFO     Training average regularization at step 24500: 427685.220000
+2023-03-07 23:37:16,037 INFO     Training average loss at step 24500: 625254.968125
+2023-03-07 23:38:13,499 INFO     Training average regularization at step 24600: 424723.064375
+2023-03-07 23:38:13,499 INFO     Training average loss at step 24600: 619887.468750
+2023-03-07 23:39:11,091 INFO     Training average regularization at step 24700: 421783.261875
+2023-03-07 23:39:11,091 INFO     Training average loss at step 24700: 617050.847500
+2023-03-07 23:40:08,658 INFO     Training average regularization at step 24800: 418869.084688
+2023-03-07 23:40:08,659 INFO     Training average loss at step 24800: 615234.873750
+2023-03-07 23:41:12,360 INFO     Training average regularization at step 24900: 415982.564375
+2023-03-07 23:41:12,360 INFO     Training average loss at step 24900: 610092.781250
+2023-03-07 23:42:10,575 INFO     Change learning_rate to 0.000010 at step 25000
+2023-03-07 23:42:10,575 INFO     Training average regularization at step 25000: 413128.215625
+2023-03-07 23:42:10,575 INFO     Training average loss at step 25000: 605096.864375
+2023-03-07 23:43:08,113 INFO     Training average regularization at step 25100: 410126.668438
+2023-03-07 23:43:08,113 INFO     Training average loss at step 25100: 598792.551250
+2023-03-07 23:44:06,991 INFO     Training average regularization at step 25200: 407900.399062
+2023-03-07 23:44:06,991 INFO     Training average loss at step 25200: 594812.676562
+2023-03-07 23:45:05,298 INFO     Training average regularization at step 25300: 406354.346562
+2023-03-07 23:45:05,298 INFO     Training average loss at step 25300: 592207.728437
+2023-03-07 23:46:03,337 INFO     Training average regularization at step 25400: 405094.405000
+2023-03-07 23:46:03,337 INFO     Training average loss at step 25400: 591571.671562
+2023-03-07 23:47:02,364 INFO     Training average regularization at step 25500: 403990.254063
+2023-03-07 23:47:02,365 INFO     Training average loss at step 25500: 590339.319063
+2023-03-07 23:48:00,665 INFO     Training average regularization at step 25600: 402990.841562
+2023-03-07 23:48:00,665 INFO     Training average loss at step 25600: 590302.123125
+2023-03-07 23:49:03,782 INFO     Training average regularization at step 25700: 402071.666875
+2023-03-07 23:49:03,782 INFO     Training average loss at step 25700: 587412.725625
+2023-03-07 23:50:01,430 INFO     Training average regularization at step 25800: 401217.315625
+2023-03-07 23:50:01,430 INFO     Training average loss at step 25800: 590949.097812
+2023-03-07 23:50:59,599 INFO     Training average regularization at step 25900: 400420.038438
+2023-03-07 23:50:59,600 INFO     Training average loss at step 25900: 585950.094375
+2023-03-07 23:51:57,205 INFO     Training average regularization at step 26000: 399671.349375
+2023-03-07 23:51:57,205 INFO     Training average loss at step 26000: 585571.545000
+2023-03-07 23:52:54,858 INFO     Training average regularization at step 26100: 398966.814063
+2023-03-07 23:52:54,858 INFO     Training average loss at step 26100: 585062.953125
+2023-03-07 23:53:53,342 INFO     Training average regularization at step 26200: 398303.078125
+2023-03-07 23:53:53,343 INFO     Training average loss at step 26200: 584512.002188
+2023-03-07 23:54:51,695 INFO     Training average regularization at step 26300: 397677.346875
+2023-03-07 23:54:51,695 INFO     Training average loss at step 26300: 584685.904375
+2023-03-07 23:55:55,413 INFO     Training average regularization at step 26400: 397086.989063
+2023-03-07 23:55:55,413 INFO     Training average loss at step 26400: 581260.560000
+2023-03-07 23:56:54,152 INFO     Training average regularization at step 26500: 396526.577188
+2023-03-07 23:56:54,152 INFO     Training average loss at step 26500: 575503.601562
+2023-03-07 23:57:51,452 INFO     Training average regularization at step 26600: 395984.956250
+2023-03-07 23:57:51,452 INFO     Training average loss at step 26600: 576274.185000
+2023-03-07 23:58:49,087 INFO     Training average regularization at step 26700: 395459.059063
+2023-03-07 23:58:49,088 INFO     Training average loss at step 26700: 574857.911250
+2023-03-07 23:59:46,920 INFO     Training average regularization at step 26800: 394947.971875
+2023-03-07 23:59:46,920 INFO     Training average loss at step 26800: 574503.701875
+2023-03-08 00:00:44,575 INFO     Training average regularization at step 26900: 394451.052187
+2023-03-08 00:00:44,575 INFO     Training average loss at step 26900: 573326.111563
+2023-03-08 00:01:42,318 INFO     Training average regularization at step 27000: 393968.274375
+2023-03-08 00:01:42,318 INFO     Training average loss at step 27000: 575137.135000
+2023-03-08 00:02:40,182 INFO     Training average regularization at step 27100: 393499.255937
+2023-03-08 00:02:40,182 INFO     Training average loss at step 27100: 573613.027188
+2023-03-08 00:03:42,325 INFO     Training average regularization at step 27200: 393043.630000
+2023-03-08 00:03:42,325 INFO     Training average loss at step 27200: 569578.461875
+2023-03-08 00:04:40,497 INFO     Training average regularization at step 27300: 392600.433437
+2023-03-08 00:04:40,497 INFO     Training average loss at step 27300: 572537.391563
+2023-03-08 00:05:38,145 INFO     Training average regularization at step 27400: 392169.387500
+2023-03-08 00:05:38,145 INFO     Training average loss at step 27400: 568493.388750
+2023-03-08 00:06:37,193 INFO     Training average regularization at step 27500: 391750.142188
+2023-03-08 00:06:37,194 INFO     Training average loss at step 27500: 570170.972812
+2023-03-08 00:07:35,381 INFO     Training average regularization at step 27600: 391342.298125
+2023-03-08 00:07:35,382 INFO     Training average loss at step 27600: 571545.883750
+2023-03-08 00:08:33,329 INFO     Training average regularization at step 27700: 390945.738438
+2023-03-08 00:08:33,329 INFO     Training average loss at step 27700: 568416.851250
+2023-03-08 00:09:31,498 INFO     Training average regularization at step 27800: 390560.557812
+2023-03-08 00:09:31,499 INFO     Training average loss at step 27800: 570531.716250
+2023-03-08 00:10:33,938 INFO     Training average regularization at step 27900: 390186.472500
+2023-03-08 00:10:33,939 INFO     Training average loss at step 27900: 569005.673750
+2023-03-08 00:11:32,506 INFO     Training average regularization at step 28000: 389823.184063
+2023-03-08 00:11:32,506 INFO     Training average loss at step 28000: 565109.972187
+2023-03-08 00:12:32,508 INFO     Training average regularization at step 28100: 389470.220938
+2023-03-08 00:12:32,509 INFO     Training average loss at step 28100: 566918.412813
+2023-03-08 00:13:32,459 INFO     Training average regularization at step 28200: 389127.403750
+2023-03-08 00:13:32,460 INFO     Training average loss at step 28200: 569051.308125
+2023-03-08 00:14:31,086 INFO     Training average regularization at step 28300: 388794.860000
+2023-03-08 00:14:31,086 INFO     Training average loss at step 28300: 566750.526250
+2023-03-08 00:15:29,910 INFO     Training average regularization at step 28400: 388472.247812
+2023-03-08 00:15:29,910 INFO     Training average loss at step 28400: 566517.269375
+2023-03-08 00:16:32,634 INFO     Training average regularization at step 28500: 388158.840625
+2023-03-08 00:16:32,634 INFO     Training average loss at step 28500: 567438.160000
+2023-03-08 00:17:30,290 INFO     Training average regularization at step 28600: 387854.905000
+2023-03-08 00:17:30,290 INFO     Training average loss at step 28600: 567294.422188
+2023-03-08 00:18:27,973 INFO     Training average regularization at step 28700: 387559.785625
+2023-03-08 00:18:27,973 INFO     Training average loss at step 28700: 565548.834063
+2023-03-08 00:19:25,741 INFO     Training average regularization at step 28800: 387273.502812
+2023-03-08 00:19:25,741 INFO     Training average loss at step 28800: 565269.737812
+2023-03-08 00:20:23,497 INFO     Training average regularization at step 28900: 386995.945312
+2023-03-08 00:20:23,498 INFO     Training average loss at step 28900: 565559.549375
+2023-03-08 00:21:21,130 INFO     Training average regularization at step 29000: 386726.947500
+2023-03-08 00:21:21,130 INFO     Training average loss at step 29000: 562949.393750
+2023-03-08 00:22:18,867 INFO     Training average regularization at step 29100: 386466.340313
+2023-03-08 00:22:18,867 INFO     Training average loss at step 29100: 563171.693438
+2023-03-08 00:23:16,607 INFO     Training average regularization at step 29200: 386213.619688
+2023-03-08 00:23:16,607 INFO     Training average loss at step 29200: 562452.596250
+2023-03-08 00:24:18,996 INFO     Training average regularization at step 29300: 385968.398438
+2023-03-08 00:24:18,996 INFO     Training average loss at step 29300: 562385.412500
+2023-03-08 00:25:16,985 INFO     Training average regularization at step 29400: 385730.370937
+2023-03-08 00:25:16,985 INFO     Training average loss at step 29400: 558839.847187
+2023-03-08 00:26:14,855 INFO     Training average regularization at step 29500: 385494.744688
+2023-03-08 00:26:14,855 INFO     Training average loss at step 29500: 560836.616563
+2023-03-08 00:27:14,054 INFO     Training average regularization at step 29600: 385255.640937
+2023-03-08 00:27:14,054 INFO     Training average loss at step 29600: 560258.663125
+2023-03-08 00:28:12,306 INFO     Training average regularization at step 29700: 385012.932188
+2023-03-08 00:28:12,306 INFO     Training average loss at step 29700: 560504.400000
+2023-03-08 00:29:10,147 INFO     Training average regularization at step 29800: 384766.805312
+2023-03-08 00:29:10,147 INFO     Training average loss at step 29800: 560547.751250
+2023-03-08 00:30:09,734 INFO     Training average regularization at step 29900: 384517.219062
+2023-03-08 00:30:09,735 INFO     Training average loss at step 29900: 560415.442813
+2023-03-08 00:31:07,973 INFO     Training average regularization at step 30000: 384264.789687
+2023-03-08 00:31:07,974 INFO     Training average loss at step 30000: 559224.816250
+2023-03-08 00:32:10,995 INFO     Training average regularization at step 30100: 384009.661562
+2023-03-08 00:32:10,995 INFO     Training average loss at step 30100: 559109.993437
+2023-03-08 00:33:08,928 INFO     Training average regularization at step 30200: 383752.018437
+2023-03-08 00:33:08,928 INFO     Training average loss at step 30200: 559295.354062
+2023-03-08 00:34:08,208 INFO     Training average regularization at step 30300: 383492.536875
+2023-03-08 00:34:08,208 INFO     Training average loss at step 30300: 557444.075625
+2023-03-08 00:35:06,980 INFO     Training average regularization at step 30400: 383231.353125
+2023-03-08 00:35:06,981 INFO     Training average loss at step 30400: 558689.418750
+2023-03-08 00:36:05,000 INFO     Training average regularization at step 30500: 382968.656250
+2023-03-08 00:36:05,000 INFO     Training average loss at step 30500: 557122.403125
+2023-03-08 00:37:02,636 INFO     Training average regularization at step 30600: 382704.811875
+2023-03-08 00:37:02,636 INFO     Training average loss at step 30600: 559929.699063
+2023-03-08 00:38:00,397 INFO     Training average regularization at step 30700: 382440.361875
+2023-03-08 00:38:00,397 INFO     Training average loss at step 30700: 555877.178438
+2023-03-08 00:38:58,036 INFO     Training average regularization at step 30800: 382175.515937
+2023-03-08 00:38:58,037 INFO     Training average loss at step 30800: 558465.069375
+2023-03-08 00:39:56,361 INFO     Training average regularization at step 30900: 381910.507188
+2023-03-08 00:39:56,361 INFO     Training average loss at step 30900: 557092.478125
+2023-03-08 00:40:59,662 INFO     Training average regularization at step 31000: 381646.005000
+2023-03-08 00:40:59,662 INFO     Training average loss at step 31000: 556713.989062
+2023-03-08 00:41:57,283 INFO     Training average regularization at step 31100: 381382.333125
+2023-03-08 00:41:57,284 INFO     Training average loss at step 31100: 555768.187813
+2023-03-08 00:42:54,885 INFO     Training average regularization at step 31200: 381119.578750
+2023-03-08 00:42:54,885 INFO     Training average loss at step 31200: 555205.317500
+2023-03-08 00:43:53,319 INFO     Training average regularization at step 31300: 380858.223125
+2023-03-08 00:43:53,320 INFO     Training average loss at step 31300: 556173.114375
+2023-03-08 00:44:51,237 INFO     Training average regularization at step 31400: 380598.608125
+2023-03-08 00:44:51,238 INFO     Training average loss at step 31400: 555035.885000
+2023-03-08 00:45:48,976 INFO     Training average regularization at step 31500: 380341.271875
+2023-03-08 00:45:48,976 INFO     Training average loss at step 31500: 556432.256875
+2023-03-08 00:46:47,560 INFO     Training average regularization at step 31600: 380086.341562
+2023-03-08 00:46:47,560 INFO     Training average loss at step 31600: 554056.892500
+2023-03-08 00:47:51,180 INFO     Training average regularization at step 31700: 379834.260937
+2023-03-08 00:47:51,180 INFO     Training average loss at step 31700: 553751.660937
+2023-03-08 00:48:48,968 INFO     Training average regularization at step 31800: 379585.338750
+2023-03-08 00:48:48,968 INFO     Training average loss at step 31800: 552844.878125
+2023-03-08 00:49:47,271 INFO     Training average regularization at step 31900: 379340.044687
+2023-03-08 00:49:47,272 INFO     Training average loss at step 31900: 552734.085625
+2023-03-08 00:50:45,096 INFO     Training average regularization at step 32000: 379098.688750
+2023-03-08 00:50:45,097 INFO     Training average loss at step 32000: 552235.305000
+2023-03-08 00:51:43,137 INFO     Training average regularization at step 32100: 378861.308437
+2023-03-08 00:51:43,137 INFO     Training average loss at step 32100: 553905.208438
+2023-03-08 00:52:42,418 INFO     Training average regularization at step 32200: 378628.178438
+2023-03-08 00:52:42,419 INFO     Training average loss at step 32200: 552948.589375
+2023-03-08 00:53:43,297 INFO     Training average regularization at step 32300: 378399.785313
+2023-03-08 00:53:43,297 INFO     Training average loss at step 32300: 547584.614062
+2023-03-08 00:54:47,452 INFO     Training average regularization at step 32400: 378174.111563
+2023-03-08 00:54:47,452 INFO     Training average loss at step 32400: 551079.485313
+2023-03-08 00:55:45,441 INFO     Training average regularization at step 32500: 377946.116563
+2023-03-08 00:55:45,441 INFO     Training average loss at step 32500: 551314.160312
+2023-03-08 00:56:43,051 INFO     Training average regularization at step 32600: 377714.523438
+2023-03-08 00:56:43,051 INFO     Training average loss at step 32600: 550424.837812
+2023-03-08 00:57:40,845 INFO     Training average regularization at step 32700: 377479.553438
+2023-03-08 00:57:40,845 INFO     Training average loss at step 32700: 548732.011563
+2023-03-08 00:58:38,792 INFO     Training average regularization at step 32800: 377241.367812
+2023-03-08 00:58:38,792 INFO     Training average loss at step 32800: 548634.835625
+2023-03-08 00:59:38,649 INFO     Training average regularization at step 32900: 376999.989687
+2023-03-08 00:59:38,649 INFO     Training average loss at step 32900: 547317.569063
+2023-03-08 01:00:36,628 INFO     Training average regularization at step 33000: 376755.751563
+2023-03-08 01:00:36,628 INFO     Training average loss at step 33000: 548029.372500
+2023-03-08 01:01:34,382 INFO     Training average regularization at step 33100: 376508.998750
+2023-03-08 01:01:34,383 INFO     Training average loss at step 33100: 548740.465625
+2023-03-08 01:02:37,021 INFO     Training average regularization at step 33200: 376260.093125
+2023-03-08 01:02:37,021 INFO     Training average loss at step 33200: 546977.331562
+2023-03-08 01:03:35,766 INFO     Training average regularization at step 33300: 376009.180625
+2023-03-08 01:03:35,766 INFO     Training average loss at step 33300: 548296.212812
+2023-03-08 01:04:33,918 INFO     Training average regularization at step 33400: 375756.909062
+2023-03-08 01:04:33,919 INFO     Training average loss at step 33400: 546894.175937
+2023-03-08 01:05:31,762 INFO     Training average regularization at step 33500: 375503.367500
+2023-03-08 01:05:31,762 INFO     Training average loss at step 33500: 546135.757500
+2023-03-08 01:06:29,381 INFO     Training average regularization at step 33600: 375249.208125
+2023-03-08 01:06:29,382 INFO     Training average loss at step 33600: 547596.700000
+2023-03-08 01:07:27,691 INFO     Training average regularization at step 33700: 374994.348750
+2023-03-08 01:07:27,691 INFO     Training average loss at step 33700: 546405.154375
+2023-03-08 01:08:25,560 INFO     Training average regularization at step 33800: 374739.113750
+2023-03-08 01:08:25,560 INFO     Training average loss at step 33800: 546321.180000
+2023-03-08 01:09:27,958 INFO     Training average regularization at step 33900: 374483.924687
+2023-03-08 01:09:27,958 INFO     Training average loss at step 33900: 546202.644687
+2023-03-08 01:10:25,503 INFO     Training average regularization at step 34000: 374229.349687
+2023-03-08 01:10:25,503 INFO     Training average loss at step 34000: 544774.630000
+2023-03-08 01:11:23,568 INFO     Training average regularization at step 34100: 373975.746875
+2023-03-08 01:11:23,568 INFO     Training average loss at step 34100: 546449.465000
+2023-03-08 01:12:21,803 INFO     Training average regularization at step 34200: 373723.170312
+2023-03-08 01:12:21,803 INFO     Training average loss at step 34200: 545588.134375
+2023-03-08 01:13:20,686 INFO     Training average regularization at step 34300: 373472.233125
+2023-03-08 01:13:20,686 INFO     Training average loss at step 34300: 544567.307500
+2023-03-08 01:14:18,660 INFO     Training average regularization at step 34400: 373222.995000
+2023-03-08 01:14:18,660 INFO     Training average loss at step 34400: 543653.865313
+2023-03-08 01:15:16,373 INFO     Training average regularization at step 34500: 372975.860625
+2023-03-08 01:15:16,373 INFO     Training average loss at step 34500: 544483.903750
+2023-03-08 01:16:16,057 INFO     Training average regularization at step 34600: 372731.399687
+2023-03-08 01:16:16,057 INFO     Training average loss at step 34600: 542661.096875
+2023-03-08 01:17:21,410 INFO     Training average regularization at step 34700: 372489.828125
+2023-03-08 01:17:21,410 INFO     Training average loss at step 34700: 542802.318750
+2023-03-08 01:18:20,052 INFO     Training average regularization at step 34800: 372251.589687
+2023-03-08 01:18:20,053 INFO     Training average loss at step 34800: 540986.600625
+2023-03-08 01:19:18,335 INFO     Training average regularization at step 34900: 372017.040312
+2023-03-08 01:19:18,335 INFO     Training average loss at step 34900: 541104.861875
+2023-03-08 01:20:16,167 INFO     Training average regularization at step 35000: 371786.222187
+2023-03-08 01:20:16,168 INFO     Training average loss at step 35000: 542411.006250
+2023-03-08 01:21:15,427 INFO     Training average regularization at step 35100: 371559.227187
+2023-03-08 01:21:15,428 INFO     Training average loss at step 35100: 542037.889062
+2023-03-08 01:22:14,142 INFO     Training average regularization at step 35200: 371336.645625
+2023-03-08 01:22:14,142 INFO     Training average loss at step 35200: 541888.028750
+2023-03-08 01:23:18,591 INFO     Training average regularization at step 35300: 371117.750937
+2023-03-08 01:23:18,591 INFO     Training average loss at step 35300: 538187.590625
+2023-03-08 01:24:16,651 INFO     Training average regularization at step 35400: 370898.068750
+2023-03-08 01:24:16,651 INFO     Training average loss at step 35400: 539381.919375
+2023-03-08 01:25:14,878 INFO     Training average regularization at step 35500: 370674.993437
+2023-03-08 01:25:14,878 INFO     Training average loss at step 35500: 538802.445000
+2023-03-08 01:26:13,639 INFO     Training average regularization at step 35600: 370448.522500
+2023-03-08 01:26:13,640 INFO     Training average loss at step 35600: 539044.446875
+2023-03-08 01:27:13,158 INFO     Training average regularization at step 35700: 370218.869375
+2023-03-08 01:27:13,158 INFO     Training average loss at step 35700: 539399.186250
+2023-03-08 01:28:12,342 INFO     Training average regularization at step 35800: 369986.160625
+2023-03-08 01:28:12,342 INFO     Training average loss at step 35800: 537693.350313
+2023-03-08 01:29:10,210 INFO     Training average regularization at step 35900: 369750.841562
+2023-03-08 01:29:10,210 INFO     Training average loss at step 35900: 538183.706875
+2023-03-08 01:30:07,638 INFO     Training average regularization at step 36000: 369513.098750
+2023-03-08 01:30:07,639 INFO     Training average loss at step 36000: 536752.431250
+2023-03-08 01:31:05,618 INFO     Training average regularization at step 36100: 369273.015937
+2023-03-08 01:31:05,619 INFO     Training average loss at step 36100: 536743.729375
+2023-03-08 01:32:07,789 INFO     Training average regularization at step 36200: 369031.088750
+2023-03-08 01:32:07,789 INFO     Training average loss at step 36200: 535910.200313
+2023-03-08 01:33:05,685 INFO     Training average regularization at step 36300: 368787.372500
+2023-03-08 01:33:05,685 INFO     Training average loss at step 36300: 536135.073438
+2023-03-08 01:34:03,134 INFO     Training average regularization at step 36400: 368542.536875
+2023-03-08 01:34:03,134 INFO     Training average loss at step 36400: 535552.863750
+2023-03-08 01:35:01,343 INFO     Training average regularization at step 36500: 368296.611875
+2023-03-08 01:35:01,343 INFO     Training average loss at step 36500: 535947.020000
+2023-03-08 01:35:59,191 INFO     Training average regularization at step 36600: 368049.727500
+2023-03-08 01:35:59,192 INFO     Training average loss at step 36600: 536907.711562
+2023-03-08 01:36:57,082 INFO     Training average regularization at step 36700: 367802.626563
+2023-03-08 01:36:57,082 INFO     Training average loss at step 36700: 534366.035937
+2023-03-08 01:37:56,366 INFO     Training average regularization at step 36800: 367555.592813
+2023-03-08 01:37:56,366 INFO     Training average loss at step 36800: 536316.980625
+2023-03-08 01:39:00,943 INFO     Training average regularization at step 36900: 367308.744063
+2023-03-08 01:39:00,943 INFO     Training average loss at step 36900: 538579.046875
+2023-03-08 01:39:59,091 INFO     Training average regularization at step 37000: 367062.747812
+2023-03-08 01:39:59,091 INFO     Training average loss at step 37000: 535502.552500
+2023-03-08 01:40:57,372 INFO     Training average regularization at step 37100: 366817.859375
+2023-03-08 01:40:57,372 INFO     Training average loss at step 37100: 535708.829375
+2023-03-08 01:41:55,566 INFO     Training average regularization at step 37200: 366574.603125
+2023-03-08 01:41:55,566 INFO     Training average loss at step 37200: 533996.225313
+2023-03-08 01:42:54,544 INFO     Training average regularization at step 37300: 366333.062500
+2023-03-08 01:42:54,544 INFO     Training average loss at step 37300: 533743.029062
+2023-03-08 01:43:52,705 INFO     Training average regularization at step 37400: 366093.492812
+2023-03-08 01:43:52,705 INFO     Training average loss at step 37400: 533533.521563
+2023-03-08 01:44:50,587 INFO     Training average regularization at step 37500: 365856.094062
+2023-03-08 01:44:50,587 INFO     Training average loss at step 37500: 533908.083125
+2023-03-08 01:45:48,670 INFO     Training average regularization at step 37600: 365621.301250
+2023-03-08 01:45:48,671 INFO     Training average loss at step 37600: 534044.191250
+2023-03-08 01:46:47,884 INFO     Training average regularization at step 37700: 365389.624688
+2023-03-08 01:46:47,884 INFO     Training average loss at step 37700: 532297.392813
+2023-03-08 01:47:52,289 INFO     Training average regularization at step 37800: 365161.072500
+2023-03-08 01:47:52,289 INFO     Training average loss at step 37800: 531693.374062
+2023-03-08 01:48:50,805 INFO     Training average regularization at step 37900: 364936.009688
+2023-03-08 01:48:50,806 INFO     Training average loss at step 37900: 530563.422813
+2023-03-08 01:49:48,895 INFO     Training average regularization at step 38000: 364714.674375
+2023-03-08 01:49:48,895 INFO     Training average loss at step 38000: 530128.821875
+2023-03-08 01:50:47,071 INFO     Training average regularization at step 38100: 364497.144062
+2023-03-08 01:50:47,071 INFO     Training average loss at step 38100: 530654.388125
+2023-03-08 01:51:47,159 INFO     Training average regularization at step 38200: 364283.737812
+2023-03-08 01:51:47,159 INFO     Training average loss at step 38200: 526273.245625
+2023-03-08 01:52:46,153 INFO     Training average regularization at step 38300: 364071.392188
+2023-03-08 01:52:46,153 INFO     Training average loss at step 38300: 527892.198750
+2023-03-08 01:53:44,567 INFO     Training average regularization at step 38400: 363856.074375
+2023-03-08 01:53:44,567 INFO     Training average loss at step 38400: 528495.510312
+2023-03-08 01:54:47,370 INFO     Training average regularization at step 38500: 363637.216562
+2023-03-08 01:54:47,370 INFO     Training average loss at step 38500: 529960.660312
+2023-03-08 01:55:44,717 INFO     Training average regularization at step 38600: 363415.193125
+2023-03-08 01:55:44,717 INFO     Training average loss at step 38600: 529181.233750
+2023-03-08 01:56:42,413 INFO     Training average regularization at step 38700: 363190.250625
+2023-03-08 01:56:42,413 INFO     Training average loss at step 38700: 528826.250313
+2023-03-08 01:57:39,939 INFO     Training average regularization at step 38800: 362962.479375
+2023-03-08 01:57:39,939 INFO     Training average loss at step 38800: 527805.216875
+2023-03-08 01:58:37,510 INFO     Training average regularization at step 38900: 362732.349687
+2023-03-08 01:58:37,510 INFO     Training average loss at step 38900: 527585.281875
+2023-03-08 01:59:35,337 INFO     Training average regularization at step 39000: 362499.918125
+2023-03-08 01:59:35,337 INFO     Training average loss at step 39000: 526161.242500
+2023-03-08 02:00:37,573 INFO     Training average regularization at step 39100: 362265.321562
+2023-03-08 02:00:37,573 INFO     Training average loss at step 39100: 527232.964063
+2023-03-08 02:01:35,097 INFO     Training average regularization at step 39200: 362029.068750
+2023-03-08 02:01:35,097 INFO     Training average loss at step 39200: 526325.043750
+2023-03-08 02:02:33,108 INFO     Training average regularization at step 39300: 361791.366250
+2023-03-08 02:02:33,108 INFO     Training average loss at step 39300: 527334.588750
+2023-03-08 02:03:31,952 INFO     Training average regularization at step 39400: 361552.348750
+2023-03-08 02:03:31,952 INFO     Training average loss at step 39400: 526508.143125
+2023-03-08 02:04:29,892 INFO     Training average regularization at step 39500: 361312.525313
+2023-03-08 02:04:29,892 INFO     Training average loss at step 39500: 525789.532500
+2023-03-08 02:05:27,427 INFO     Training average regularization at step 39600: 361072.530000
+2023-03-08 02:05:27,427 INFO     Training average loss at step 39600: 525868.569375
+2023-03-08 02:06:24,652 INFO     Training average regularization at step 39700: 360832.303125
+2023-03-08 02:06:24,652 INFO     Training average loss at step 39700: 525975.496250
+2023-03-08 02:07:26,182 INFO     Training average regularization at step 39800: 360592.247812
+2023-03-08 02:07:26,182 INFO     Training average loss at step 39800: 523916.601875
+2023-03-08 02:08:23,376 INFO     Training average regularization at step 39900: 360352.834688
+2023-03-08 02:08:23,376 INFO     Training average loss at step 39900: 524165.806563
+2023-03-08 02:09:20,546 INFO     Training average regularization at step 40000: 360114.229687
+2023-03-08 02:09:20,547 INFO     Training average loss at step 40000: 525415.155312
+2023-03-08 02:10:17,873 INFO     Training average regularization at step 40100: 359876.824062
+2023-03-08 02:10:17,873 INFO     Training average loss at step 40100: 522494.605000
+2023-03-08 02:11:14,898 INFO     Training average regularization at step 40200: 359640.857500
+2023-03-08 02:11:14,898 INFO     Training average loss at step 40200: 524308.857187
+2023-03-08 02:12:12,342 INFO     Training average regularization at step 40300: 359406.769688
+2023-03-08 02:12:12,343 INFO     Training average loss at step 40300: 522208.052187
+2023-03-08 02:13:09,471 INFO     Training average regularization at step 40400: 359174.826562
+2023-03-08 02:13:09,471 INFO     Training average loss at step 40400: 522776.556563
+2023-03-08 02:14:07,137 INFO     Training average regularization at step 40500: 358945.483438
+2023-03-08 02:14:07,137 INFO     Training average loss at step 40500: 523370.307812
+2023-03-08 02:15:05,132 INFO     Training average regularization at step 40600: 358718.934375
+2023-03-08 02:15:05,132 INFO     Training average loss at step 40600: 522301.307812
+2023-03-08 02:16:07,122 INFO     Training average regularization at step 40700: 358495.586875
+2023-03-08 02:16:07,122 INFO     Training average loss at step 40700: 522130.773438
+2023-03-08 02:17:04,656 INFO     Training average regularization at step 40800: 358275.776250
+2023-03-08 02:17:04,656 INFO     Training average loss at step 40800: 521405.504063
+2023-03-08 02:18:02,300 INFO     Training average regularization at step 40900: 358059.521875
+2023-03-08 02:18:02,300 INFO     Training average loss at step 40900: 522933.987500
+2023-03-08 02:18:59,710 INFO     Training average regularization at step 41000: 357847.227187
+2023-03-08 02:18:59,710 INFO     Training average loss at step 41000: 521295.183125
+2023-03-08 02:19:57,315 INFO     Training average regularization at step 41100: 357639.102500
+2023-03-08 02:19:57,316 INFO     Training average loss at step 41100: 521137.502188
+2023-03-08 02:20:55,286 INFO     Training average regularization at step 41200: 357433.711875
+2023-03-08 02:20:55,286 INFO     Training average loss at step 41200: 517258.222187
+2023-03-08 02:21:52,875 INFO     Training average regularization at step 41300: 357226.672187
+2023-03-08 02:21:52,875 INFO     Training average loss at step 41300: 520405.382500
+2023-03-08 02:22:55,240 INFO     Training average regularization at step 41400: 357016.290312
+2023-03-08 02:22:55,240 INFO     Training average loss at step 41400: 518327.481250
+2023-03-08 02:23:52,717 INFO     Training average regularization at step 41500: 356802.551563
+2023-03-08 02:23:52,717 INFO     Training average loss at step 41500: 519176.232812
+2023-03-08 02:24:49,791 INFO     Training average regularization at step 41600: 356585.763437
+2023-03-08 02:24:49,791 INFO     Training average loss at step 41600: 518647.255625
+2023-03-08 02:25:47,514 INFO     Training average regularization at step 41700: 356366.391875
+2023-03-08 02:25:47,515 INFO     Training average loss at step 41700: 518581.618750
+2023-03-08 02:26:45,691 INFO     Training average regularization at step 41800: 356144.560000
+2023-03-08 02:26:45,691 INFO     Training average loss at step 41800: 518308.164062
+2023-03-08 02:27:42,977 INFO     Training average regularization at step 41900: 355920.374063
+2023-03-08 02:27:42,977 INFO     Training average loss at step 41900: 516601.333437
+2023-03-08 02:28:40,344 INFO     Training average regularization at step 42000: 355694.143437
+2023-03-08 02:28:40,344 INFO     Training average loss at step 42000: 515606.483750
+2023-03-08 02:29:42,374 INFO     Training average regularization at step 42100: 355466.265937
+2023-03-08 02:29:42,374 INFO     Training average loss at step 42100: 516044.122812
+2023-03-08 02:30:39,400 INFO     Training average regularization at step 42200: 355236.971250
+2023-03-08 02:30:39,400 INFO     Training average loss at step 42200: 517187.833437
+2023-03-08 02:31:37,170 INFO     Training average regularization at step 42300: 355006.426250
+2023-03-08 02:31:37,170 INFO     Training average loss at step 42300: 516548.914062
+2023-03-08 02:32:34,896 INFO     Training average regularization at step 42400: 354775.076250
+2023-03-08 02:32:34,896 INFO     Training average loss at step 42400: 516460.769688
+2023-03-08 02:33:32,834 INFO     Training average regularization at step 42500: 354542.949062
+2023-03-08 02:33:32,834 INFO     Training average loss at step 42500: 515311.847187
+2023-03-08 02:34:30,196 INFO     Training average regularization at step 42600: 354310.542187
+2023-03-08 02:34:30,196 INFO     Training average loss at step 42600: 514561.699375
+2023-03-08 02:35:27,952 INFO     Training average regularization at step 42700: 354078.385313
+2023-03-08 02:35:27,952 INFO     Training average loss at step 42700: 515431.192812
+2023-03-08 02:36:30,877 INFO     Training average regularization at step 42800: 353846.989063
+2023-03-08 02:36:30,877 INFO     Training average loss at step 42800: 513283.130937
+2023-03-08 02:37:28,661 INFO     Training average regularization at step 42900: 353615.969687
+2023-03-08 02:37:28,661 INFO     Training average loss at step 42900: 515175.716875
+2023-03-08 02:38:25,596 INFO     Training average regularization at step 43000: 353385.891875
+2023-03-08 02:38:25,596 INFO     Training average loss at step 43000: 513190.760937
+2023-03-08 02:39:23,294 INFO     Training average regularization at step 43100: 353157.238750
+2023-03-08 02:39:23,294 INFO     Training average loss at step 43100: 514365.884688
+2023-03-08 02:40:20,796 INFO     Training average regularization at step 43200: 352930.226875
+2023-03-08 02:40:20,796 INFO     Training average loss at step 43200: 513649.460938
+2023-03-08 02:41:17,935 INFO     Training average regularization at step 43300: 352705.200313
+2023-03-08 02:41:17,935 INFO     Training average loss at step 43300: 512683.468438
+2023-03-08 02:42:15,667 INFO     Training average regularization at step 43400: 352482.274687
+2023-03-08 02:42:15,667 INFO     Training average loss at step 43400: 513953.759062
+2023-03-08 02:43:18,236 INFO     Training average regularization at step 43500: 352261.839062
+2023-03-08 02:43:18,236 INFO     Training average loss at step 43500: 514578.186250
+2023-03-08 02:44:15,878 INFO     Training average regularization at step 43600: 352044.527500
+2023-03-08 02:44:15,878 INFO     Training average loss at step 43600: 513340.711562
+2023-03-08 02:45:13,478 INFO     Training average regularization at step 43700: 351830.466250
+2023-03-08 02:45:13,478 INFO     Training average loss at step 43700: 512597.808125
+2023-03-08 02:46:10,375 INFO     Training average regularization at step 43800: 351619.712187
+2023-03-08 02:46:10,375 INFO     Training average loss at step 43800: 512736.123125
+2023-03-08 02:47:08,109 INFO     Training average regularization at step 43900: 351412.469687
+2023-03-08 02:47:08,109 INFO     Training average loss at step 43900: 510858.435000
+2023-03-08 02:48:05,414 INFO     Training average regularization at step 44000: 351209.027813
+2023-03-08 02:48:05,414 INFO     Training average loss at step 44000: 511847.365312
+2023-03-08 02:49:03,321 INFO     Training average regularization at step 44100: 351009.013437
+2023-03-08 02:49:03,321 INFO     Training average loss at step 44100: 508242.399687
+2023-03-08 02:50:05,147 INFO     Training average regularization at step 44200: 350808.626563
+2023-03-08 02:50:05,147 INFO     Training average loss at step 44200: 509827.573750
+2023-03-08 02:51:02,694 INFO     Training average regularization at step 44300: 350605.035938
+2023-03-08 02:51:02,694 INFO     Training average loss at step 44300: 509768.239687
+2023-03-08 02:52:00,219 INFO     Training average regularization at step 44400: 350398.235625
+2023-03-08 02:52:00,219 INFO     Training average loss at step 44400: 510669.851562
+2023-03-08 02:52:57,707 INFO     Training average regularization at step 44500: 350188.620000
+2023-03-08 02:52:57,707 INFO     Training average loss at step 44500: 508636.831562
+2023-03-08 02:53:55,665 INFO     Training average regularization at step 44600: 349976.276562
+2023-03-08 02:53:55,665 INFO     Training average loss at step 44600: 507532.250937
+2023-03-08 02:54:53,258 INFO     Training average regularization at step 44700: 349761.528750
+2023-03-08 02:54:53,259 INFO     Training average loss at step 44700: 507166.722500
+2023-03-08 02:55:51,233 INFO     Training average regularization at step 44800: 349544.379375
+2023-03-08 02:55:51,234 INFO     Training average loss at step 44800: 507822.272188
+2023-03-08 02:56:48,452 INFO     Training average regularization at step 44900: 349325.239375
+2023-03-08 02:56:48,453 INFO     Training average loss at step 44900: 507023.934688
+2023-03-08 02:57:50,754 INFO     Training average regularization at step 45000: 349104.153125
+2023-03-08 02:57:50,754 INFO     Training average loss at step 45000: 506936.363750
+2023-03-08 02:58:48,060 INFO     Training average regularization at step 45100: 348881.621250
+2023-03-08 02:58:48,060 INFO     Training average loss at step 45100: 508225.892188
+2023-03-08 02:59:45,928 INFO     Training average regularization at step 45200: 348657.841562
+2023-03-08 02:59:45,928 INFO     Training average loss at step 45200: 506422.735312
+2023-03-08 03:00:43,274 INFO     Training average regularization at step 45300: 348433.046563
+2023-03-08 03:00:43,275 INFO     Training average loss at step 45300: 504762.487187
+2023-03-08 03:01:40,538 INFO     Training average regularization at step 45400: 348207.441875
+2023-03-08 03:01:40,538 INFO     Training average loss at step 45400: 505578.697813
+2023-03-08 03:02:37,963 INFO     Training average regularization at step 45500: 347981.217187
+2023-03-08 03:02:37,963 INFO     Training average loss at step 45500: 506019.394062
+2023-03-08 03:03:35,125 INFO     Training average regularization at step 45600: 347754.928125
+2023-03-08 03:03:35,125 INFO     Training average loss at step 45600: 506446.182500
+2023-03-08 03:04:32,401 INFO     Training average regularization at step 45700: 347529.006250
+2023-03-08 03:04:32,401 INFO     Training average loss at step 45700: 505165.010625
+2023-03-08 03:05:34,683 INFO     Training average regularization at step 45800: 347303.550000
+2023-03-08 03:05:34,683 INFO     Training average loss at step 45800: 503765.799375
+2023-03-08 03:06:32,309 INFO     Training average regularization at step 45900: 347078.883750
+2023-03-08 03:06:32,309 INFO     Training average loss at step 45900: 503431.512500
+2023-03-08 03:07:29,457 INFO     Training average regularization at step 46000: 346855.385000
+2023-03-08 03:07:29,457 INFO     Training average loss at step 46000: 505118.822188
+2023-03-08 03:08:27,271 INFO     Training average regularization at step 46100: 346633.249063
+2023-03-08 03:08:27,271 INFO     Training average loss at step 46100: 505965.863750
+2023-03-08 03:09:24,696 INFO     Training average regularization at step 46200: 346413.005625
+2023-03-08 03:09:24,697 INFO     Training average loss at step 46200: 503552.532500
+2023-03-08 03:10:22,408 INFO     Training average regularization at step 46300: 346195.048125
+2023-03-08 03:10:22,408 INFO     Training average loss at step 46300: 503632.314688
+2023-03-08 03:11:19,499 INFO     Training average regularization at step 46400: 345979.705937
+2023-03-08 03:11:19,499 INFO     Training average loss at step 46400: 503540.641875
+2023-03-08 03:12:22,016 INFO     Training average regularization at step 46500: 345766.980938
+2023-03-08 03:12:22,016 INFO     Training average loss at step 46500: 504508.191563
+2023-03-08 03:13:19,207 INFO     Training average regularization at step 46600: 345557.289375
+2023-03-08 03:13:19,208 INFO     Training average loss at step 46600: 504149.171875
+2023-03-08 03:14:16,806 INFO     Training average regularization at step 46700: 345351.015000
+2023-03-08 03:14:16,806 INFO     Training average loss at step 46700: 502760.603750
+2023-03-08 03:15:14,510 INFO     Training average regularization at step 46800: 345148.107187
+2023-03-08 03:15:14,510 INFO     Training average loss at step 46800: 501776.841250
+2023-03-08 03:16:11,867 INFO     Training average regularization at step 46900: 344949.055312
+2023-03-08 03:16:11,867 INFO     Training average loss at step 46900: 503610.253125
+2023-03-08 03:17:09,697 INFO     Training average regularization at step 47000: 344754.150938
+2023-03-08 03:17:09,697 INFO     Training average loss at step 47000: 499459.150313
+2023-03-08 03:18:06,646 INFO     Training average regularization at step 47100: 344560.870937
+2023-03-08 03:18:06,646 INFO     Training average loss at step 47100: 502122.911250
+2023-03-08 03:19:04,164 INFO     Training average regularization at step 47200: 344364.983438
+2023-03-08 03:19:04,164 INFO     Training average loss at step 47200: 500493.252188
+2023-03-08 03:20:06,343 INFO     Training average regularization at step 47300: 344166.062812
+2023-03-08 03:20:06,343 INFO     Training average loss at step 47300: 498333.462500
+2023-03-08 03:21:03,228 INFO     Training average regularization at step 47400: 343964.049687
+2023-03-08 03:21:03,229 INFO     Training average loss at step 47400: 500316.011250
+2023-03-08 03:22:00,995 INFO     Training average regularization at step 47500: 343759.153438
+2023-03-08 03:22:00,995 INFO     Training average loss at step 47500: 500182.455937
+2023-03-08 03:22:58,561 INFO     Training average regularization at step 47600: 343551.784062
+2023-03-08 03:22:58,561 INFO     Training average loss at step 47600: 500391.079375
+2023-03-08 03:23:56,178 INFO     Training average regularization at step 47700: 343342.152813
+2023-03-08 03:23:56,179 INFO     Training average loss at step 47700: 498170.565937
+2023-03-08 03:24:53,828 INFO     Training average regularization at step 47800: 343130.452813
+2023-03-08 03:24:53,828 INFO     Training average loss at step 47800: 498517.587187
+2023-03-08 03:25:51,529 INFO     Training average regularization at step 47900: 342916.818750
+2023-03-08 03:25:51,529 INFO     Training average loss at step 47900: 497232.285625
+2023-03-08 03:26:48,998 INFO     Training average regularization at step 48000: 342701.485312
+2023-03-08 03:26:48,998 INFO     Training average loss at step 48000: 497896.868437
+2023-03-08 03:27:51,161 INFO     Training average regularization at step 48100: 342484.618125
+2023-03-08 03:27:51,161 INFO     Training average loss at step 48100: 498154.920625
+2023-03-08 03:28:48,491 INFO     Training average regularization at step 48200: 342266.969062
+2023-03-08 03:28:48,491 INFO     Training average loss at step 48200: 496056.663438
+2023-03-08 03:29:45,511 INFO     Training average regularization at step 48300: 342048.630625
+2023-03-08 03:29:45,512 INFO     Training average loss at step 48300: 498381.143750
+2023-03-08 03:30:43,028 INFO     Training average regularization at step 48400: 341829.793438
+2023-03-08 03:30:43,028 INFO     Training average loss at step 48400: 497111.661562
+2023-03-08 03:31:40,347 INFO     Training average regularization at step 48500: 341610.893437
+2023-03-08 03:31:40,347 INFO     Training average loss at step 48500: 495954.273438
+2023-03-08 03:32:37,932 INFO     Training average regularization at step 48600: 341392.168438
+2023-03-08 03:32:37,932 INFO     Training average loss at step 48600: 495687.900313
+2023-03-08 03:33:35,303 INFO     Training average regularization at step 48700: 341173.995312
+2023-03-08 03:33:35,303 INFO     Training average loss at step 48700: 496398.355312
+2023-03-08 03:34:32,537 INFO     Training average regularization at step 48800: 340956.416250
+2023-03-08 03:34:32,537 INFO     Training average loss at step 48800: 494866.377500
+2023-03-08 03:35:34,896 INFO     Training average regularization at step 48900: 340739.793750
+2023-03-08 03:35:34,896 INFO     Training average loss at step 48900: 494567.089062
+2023-03-08 03:36:32,248 INFO     Training average regularization at step 49000: 340524.343438
+2023-03-08 03:36:32,248 INFO     Training average loss at step 49000: 495625.423438
+2023-03-08 03:37:30,280 INFO     Training average regularization at step 49100: 340310.579375
+2023-03-08 03:37:30,280 INFO     Training average loss at step 49100: 496021.224062
+2023-03-08 03:38:27,620 INFO     Training average regularization at step 49200: 340098.981250
+2023-03-08 03:38:27,621 INFO     Training average loss at step 49200: 495065.783125
+2023-03-08 03:39:25,203 INFO     Training average regularization at step 49300: 339889.700625
+2023-03-08 03:39:25,203 INFO     Training average loss at step 49300: 493793.014375
+2023-03-08 03:40:22,558 INFO     Training average regularization at step 49400: 339682.893437
+2023-03-08 03:40:22,559 INFO     Training average loss at step 49400: 493084.481875
+2023-03-08 03:41:20,109 INFO     Training average regularization at step 49500: 339478.900000
+2023-03-08 03:41:20,109 INFO     Training average loss at step 49500: 492617.025000
+2023-03-08 03:42:22,671 INFO     Training average regularization at step 49600: 339277.885937
+2023-03-08 03:42:22,671 INFO     Training average loss at step 49600: 493699.625312
+2023-03-08 03:43:20,300 INFO     Training average regularization at step 49700: 339080.342813
+2023-03-08 03:43:20,301 INFO     Training average loss at step 49700: 494108.576250
+2023-03-08 03:44:18,059 INFO     Training average regularization at step 49800: 338886.282500
+2023-03-08 03:44:18,059 INFO     Training average loss at step 49800: 493055.881250
+2023-03-08 03:45:15,524 INFO     Training average regularization at step 49900: 338696.103438
+2023-03-08 03:45:15,524 INFO     Training average loss at step 49900: 492985.563750
+Train_Embedding_Model del ... 
+100%|██████████| 28797/28797 [00:02<00:00, 14315.22it/s]
+generate soft canonicalization seed for iter1
+Link result:iter0
+right:30111
+total:36814
+Accuracy:0.8179225294724833
+Start predicting k for clustering!
+15530
+100%|██████████| 5/5 [4:38:10<00:00, 3338.06s/it]
+100%|██████████| 20/20 [20:52:50<00:00, 3758.51s/it]
+cluster_k: 8200
+generate soft link seed for iter1
+Canonicalization result:iter0
+Ave-prec= 0.8444333333333334 macro_prec= 0.8555 micro_prec= 0.8826 pair_prec= 0.7952
+Ave-recall= 0.7942 macro_recall= 0.5431 micro_recall= 0.8932 pair_recall= 0.9463
+Ave-F1= 0.8055 macro_f1= 0.6644 micro_f1= 0.8879 pair_f1= 0.8642
+Model: #Clusters: 6995, #Singletons 2241
+Gold: #Clusters: 6060, #Singletons 2
+
+args.out_path: output/reverb_iter1_1
+rm: cannot remove 'output/reverb_iter1_1': No such file or directory
+dataset: reverb
+load Reverb45k_dataset ... 
+load side_info
+clean_ent_list: <class 'list'> 1798923
+clean_rel_list: <class 'list'> 23111
+load init embeddings
+generate TransE embeddings ./file/reverb_iter2/1E_init
+self.training_time use pre-trained crawl embeddings ... 
+2023-03-09 05:20:15,597 INFO     Model: TransE
+2023-03-09 05:20:15,597 INFO     #entity: 1798923
+2023-03-09 05:20:15,597 INFO     #relation: 23111
+2023-03-09 05:20:15,597 INFO     #train: 3004847
+2023-03-09 05:20:15,597 INFO     Model Parameter Configuration:
+2023-03-09 05:20:15,597 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-03-09 05:20:15,598 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-03-09 05:20:15,598 INFO     Parameter entity_embedding: torch.Size([1798923, 300]), require_grad = True
+2023-03-09 05:20:15,598 INFO     Parameter relation_embedding: torch.Size([23111, 300]), require_grad = True
+2023-03-09 05:20:54,729 INFO     Start Training...
+2023-03-09 05:20:54,729 INFO     init_step = 0
+2023-03-09 05:20:54,729 INFO     single_batch_size = 2048
+2023-03-09 05:20:54,729 INFO     single_negative_adversarial_sampling = 32
+2023-03-09 05:20:54,729 INFO     hidden_dim = 300
+2023-03-09 05:20:54,729 INFO     single_gamma = 12.000000
+2023-03-09 05:20:54,729 INFO     negative_adversarial_sampling = True
+2023-03-09 05:20:54,729 INFO     adversarial_temperature = 1.000000
+2023-03-09 05:20:54,729 INFO     self.p.use_cross_seed = 1.000000
+2023-03-09 05:20:54,729 INFO     self.p.update_seed = 0.000000
+2023-03-09 05:20:54,729 INFO     self.p.max_steps = 5000.000000
+2023-03-09 05:20:54,729 INFO     self.p.turn_to_seed = 1000.000000
+2023-03-09 05:20:54,729 INFO     self.p.seed_max_steps = 2000.000000
+2023-03-09 05:20:54,729 INFO     self.p.update_seed_steps = 6000.000000
+2023-03-09 05:20:54,729 INFO     learning_rate = 0
+2023-03-09 05:20:56,820 INFO     Training average regularization at step 0: 338415.187500
+2023-03-09 05:20:56,822 INFO     Training average loss at step 0: 1937590.000000
+2023-03-09 05:21:56,907 INFO     Training average regularization at step 100: 324616.545938
+2023-03-09 05:21:56,907 INFO     Training average loss at step 100: 1949301.066250
+2023-03-09 05:22:56,758 INFO     Training average regularization at step 200: 307249.879063
+2023-03-09 05:22:56,758 INFO     Training average loss at step 200: 1838942.333750
+2023-03-09 05:23:56,767 INFO     Training average regularization at step 300: 296719.287500
+2023-03-09 05:23:56,767 INFO     Training average loss at step 300: 1767481.931250
+2023-03-09 05:25:01,823 INFO     Training average regularization at step 400: 288880.553438
+2023-03-09 05:25:01,823 INFO     Training average loss at step 400: 1671999.572500
+2023-03-09 05:26:02,100 INFO     Training average regularization at step 500: 282456.095938
+2023-03-09 05:26:02,100 INFO     Training average loss at step 500: 1611571.506250
+2023-03-09 05:27:01,854 INFO     Training average regularization at step 600: 276956.578125
+2023-03-09 05:27:01,854 INFO     Training average loss at step 600: 1525413.713125
+2023-03-09 05:28:02,074 INFO     Training average regularization at step 700: 272143.951562
+2023-03-09 05:28:02,074 INFO     Training average loss at step 700: 1463231.051250
+2023-03-09 05:29:06,940 INFO     Training average regularization at step 800: 267876.980312
+2023-03-09 05:29:06,940 INFO     Training average loss at step 800: 1401403.661875
+2023-03-09 05:30:06,723 INFO     Training average regularization at step 900: 264066.380625
+2023-03-09 05:30:06,724 INFO     Training average loss at step 900: 1336330.587500
+2023-03-09 05:31:06,850 INFO     Training average regularization at step 1000: 260645.408750
+2023-03-09 05:31:06,850 INFO     Training average loss at step 1000: 1292262.683750
+2023-03-09 05:32:07,136 INFO     Training average regularization at step 1100: 257559.788281
+2023-03-09 05:32:07,136 INFO     Training average loss at step 1100: 1231147.098750
+2023-03-09 05:33:07,484 INFO     Training average regularization at step 1200: 254758.348125
+2023-03-09 05:33:07,485 INFO     Training average loss at step 1200: 1187455.373125
+2023-03-09 05:34:12,192 INFO     Training average regularization at step 1300: 252209.176875
+2023-03-09 05:34:12,193 INFO     Training average loss at step 1300: 1133075.023125
+2023-03-09 05:35:12,144 INFO     Training average regularization at step 1400: 249878.681250
+2023-03-09 05:35:12,144 INFO     Training average loss at step 1400: 1098244.733750
+2023-03-09 05:36:12,043 INFO     Training average regularization at step 1500: 247738.965469
+2023-03-09 05:36:12,043 INFO     Training average loss at step 1500: 1049301.108750
+2023-03-09 05:37:12,149 INFO     Training average regularization at step 1600: 245770.054375
+2023-03-09 05:37:12,149 INFO     Training average loss at step 1600: 1015818.442500
+2023-03-09 05:38:11,935 INFO     Training average regularization at step 1700: 243951.648594
+2023-03-09 05:38:11,935 INFO     Training average loss at step 1700: 978460.705625
+2023-03-09 05:39:12,127 INFO     Training average regularization at step 1800: 242261.956875
+2023-03-09 05:39:12,127 INFO     Training average loss at step 1800: 942464.023125
+2023-03-09 05:40:16,946 INFO     Training average regularization at step 1900: 240687.581875
+2023-03-09 05:40:16,946 INFO     Training average loss at step 1900: 916511.153125
+2023-03-09 05:41:16,977 INFO     Training average regularization at step 2000: 239214.153125
+2023-03-09 05:41:16,977 INFO     Training average loss at step 2000: 881987.374375
+2023-03-09 05:42:17,354 INFO     Training average regularization at step 2100: 237831.030781
+2023-03-09 05:42:17,354 INFO     Training average loss at step 2100: 858849.138125
+2023-03-09 05:43:17,598 INFO     Training average regularization at step 2200: 236527.746562
+2023-03-09 05:43:17,599 INFO     Training average loss at step 2200: 830115.261250
+2023-03-09 05:44:17,751 INFO     Training average regularization at step 2300: 235294.142187
+2023-03-09 05:44:17,751 INFO     Training average loss at step 2300: 809613.976250
+2023-03-09 05:45:22,258 INFO     Training average regularization at step 2400: 234122.262344
+2023-03-09 05:45:22,258 INFO     Training average loss at step 2400: 783244.086875
+2023-03-09 05:46:22,589 INFO     Change learning_rate to 0.000010 at step 2500
+2023-03-09 05:46:22,590 INFO     Training average regularization at step 2500: 233003.667813
+2023-03-09 05:46:22,590 INFO     Training average loss at step 2500: 762274.233750
+2023-03-09 05:47:22,955 INFO     Training average regularization at step 2600: 231435.985625
+2023-03-09 05:47:22,955 INFO     Training average loss at step 2600: 746237.728437
+2023-03-09 05:48:22,668 INFO     Training average regularization at step 2700: 230165.854687
+2023-03-09 05:48:22,668 INFO     Training average loss at step 2700: 739352.798438
+2023-03-09 05:49:22,788 INFO     Training average regularization at step 2800: 229415.587344
+2023-03-09 05:49:22,788 INFO     Training average loss at step 2800: 740408.744375
+2023-03-09 05:50:27,451 INFO     Training average regularization at step 2900: 228853.000156
+2023-03-09 05:50:27,451 INFO     Training average loss at step 2900: 736043.016875
+2023-03-09 05:51:28,092 INFO     Training average regularization at step 3000: 228377.002188
+2023-03-09 05:51:28,092 INFO     Training average loss at step 3000: 726688.452500
+2023-03-09 05:52:28,287 INFO     Training average regularization at step 3100: 227947.793125
+2023-03-09 05:52:28,287 INFO     Training average loss at step 3100: 720679.868437
+2023-03-09 05:53:28,699 INFO     Training average regularization at step 3200: 227554.351250
+2023-03-09 05:53:28,700 INFO     Training average loss at step 3200: 723248.507500
+2023-03-09 05:54:34,062 INFO     Training average regularization at step 3300: 227190.700625
+2023-03-09 05:54:34,062 INFO     Training average loss at step 3300: 717056.480938
+2023-03-09 05:55:33,857 INFO     Training average regularization at step 3400: 226851.577813
+2023-03-09 05:55:33,857 INFO     Training average loss at step 3400: 717176.603750
+2023-03-09 05:56:33,943 INFO     Training average regularization at step 3500: 226533.877344
+2023-03-09 05:56:33,943 INFO     Training average loss at step 3500: 714838.457187
+2023-03-09 05:57:33,741 INFO     Training average regularization at step 3600: 226235.449063
+2023-03-09 05:57:33,742 INFO     Training average loss at step 3600: 710391.234688
+2023-03-09 05:58:33,943 INFO     Training average regularization at step 3700: 225954.201563
+2023-03-09 05:58:33,943 INFO     Training average loss at step 3700: 711853.341250
+2023-03-09 05:59:38,811 INFO     Training average regularization at step 3800: 225689.200000
+2023-03-09 05:59:38,811 INFO     Training average loss at step 3800: 705564.841250
+2023-03-09 06:00:38,839 INFO     Training average regularization at step 3900: 225438.822500
+2023-03-09 06:00:38,839 INFO     Training average loss at step 3900: 707712.333125
+2023-03-09 06:01:38,946 INFO     Training average regularization at step 4000: 225202.011250
+2023-03-09 06:01:38,946 INFO     Training average loss at step 4000: 701085.283438
+2023-03-09 06:02:38,976 INFO     Training average regularization at step 4100: 224977.962969
+2023-03-09 06:02:38,976 INFO     Training average loss at step 4100: 704284.435937
+2023-03-09 06:03:43,520 INFO     Training average regularization at step 4200: 224765.696094
+2023-03-09 06:03:43,520 INFO     Training average loss at step 4200: 698205.108437
+2023-03-09 06:04:44,016 INFO     Training average regularization at step 4300: 224564.426875
+2023-03-09 06:04:44,016 INFO     Training average loss at step 4300: 696262.680000
+2023-03-09 06:05:44,255 INFO     Training average regularization at step 4400: 224373.442500
+2023-03-09 06:05:44,256 INFO     Training average loss at step 4400: 696902.903125
+2023-03-09 06:06:44,503 INFO     Training average regularization at step 4500: 224192.407969
+2023-03-09 06:06:44,503 INFO     Training average loss at step 4500: 692494.121875
+2023-03-09 06:07:44,851 INFO     Training average regularization at step 4600: 224020.570937
+2023-03-09 06:07:44,851 INFO     Training average loss at step 4600: 694185.562813
+2023-03-09 06:08:49,736 INFO     Training average regularization at step 4700: 223857.350000
+2023-03-09 06:08:49,737 INFO     Training average loss at step 4700: 690230.901563
+2023-03-09 06:09:50,097 INFO     Training average regularization at step 4800: 223702.275156
+2023-03-09 06:09:50,097 INFO     Training average loss at step 4800: 689690.128437
+2023-03-09 06:10:50,070 INFO     Training average regularization at step 4900: 223554.995781
+2023-03-09 06:10:50,070 INFO     Training average loss at step 4900: 684636.448125
+Train_Embedding_Model del ... 
+100%|██████████| 28797/28797 [00:02<00:00, 14263.32it/s]
+generate soft canonicalization seed for iter2
+Link result:iter1
+right:31180
+total:36814
+Accuracy:0.8469603955017113
+Start predicting k for clustering!
+15530
+100%|██████████| 5/5 [4:37:38<00:00, 3331.63s/it]
+100%|██████████| 20/20 [18:45:17<00:00, 3375.88s/it]
+cluster_k: 7300
+generate soft link seed for iter2
+Canonicalization result:iter1
+Ave-prec= 0.8250333333333334 macro_prec= 0.8252 micro_prec= 0.8661 pair_prec= 0.7838
+Ave-recall= 0.8376666666666667 macro_recall= 0.6383 micro_recall= 0.9177 pair_recall= 0.957
+Ave-F1= 0.8242666666666666 macro_f1= 0.7198 micro_f1= 0.8912 pair_f1= 0.8618
+Model: #Clusters: 6167, #Singletons 1490
+Gold: #Clusters: 6060, #Singletons 2
+
+args.out_path: output/reverb_iter2_1
+rm: cannot remove 'output/reverb_iter2_1': No such file or directory
+dataset: reverb
+load Reverb45k_dataset ... 
+load side_info
+clean_ent_list: <class 'list'> 1798923
+clean_rel_list: <class 'list'> 23111
+load init embeddings
+generate TransE embeddings ./file/reverb_iter3/1E_init
+self.training_time use pre-trained crawl embeddings ... 
+2023-03-10 05:37:49,896 INFO     Model: TransE
+2023-03-10 05:37:49,896 INFO     #entity: 1798923
+2023-03-10 05:37:49,896 INFO     #relation: 23111
+2023-03-10 05:37:49,896 INFO     #train: 3004847
+2023-03-10 05:37:49,896 INFO     Model Parameter Configuration:
+2023-03-10 05:37:49,896 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-03-10 05:37:49,896 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-03-10 05:37:49,896 INFO     Parameter entity_embedding: torch.Size([1798923, 300]), require_grad = True
+2023-03-10 05:37:49,896 INFO     Parameter relation_embedding: torch.Size([23111, 300]), require_grad = True
+2023-03-10 05:38:28,892 INFO     Start Training...
+2023-03-10 05:38:28,892 INFO     init_step = 0
+2023-03-10 05:38:28,892 INFO     single_batch_size = 2048
+2023-03-10 05:38:28,892 INFO     single_negative_adversarial_sampling = 32
+2023-03-10 05:38:28,892 INFO     hidden_dim = 300
+2023-03-10 05:38:28,892 INFO     single_gamma = 12.000000
+2023-03-10 05:38:28,892 INFO     negative_adversarial_sampling = True
+2023-03-10 05:38:28,892 INFO     adversarial_temperature = 1.000000
+2023-03-10 05:38:28,892 INFO     self.p.use_cross_seed = 1.000000
+2023-03-10 05:38:28,892 INFO     self.p.update_seed = 0.000000
+2023-03-10 05:38:28,892 INFO     self.p.max_steps = 5000.000000
+2023-03-10 05:38:28,892 INFO     self.p.turn_to_seed = 1000.000000
+2023-03-10 05:38:28,892 INFO     self.p.seed_max_steps = 2000.000000
+2023-03-10 05:38:28,892 INFO     self.p.update_seed_steps = 6000.000000
+2023-03-10 05:38:28,893 INFO     learning_rate = 0
+2023-03-10 05:38:30,995 INFO     Training average regularization at step 0: 223348.156250
+2023-03-10 05:38:30,997 INFO     Training average loss at step 0: 727433.000000
+2023-03-10 05:39:30,210 INFO     Training average regularization at step 100: 213511.012344
+2023-03-10 05:39:30,210 INFO     Training average loss at step 100: 710084.064375
+2023-03-10 05:40:28,876 INFO     Training average regularization at step 200: 202605.154688
+2023-03-10 05:40:28,876 INFO     Training average loss at step 200: 682296.015625
+2023-03-10 05:41:32,882 INFO     Training average regularization at step 300: 197009.058125
+2023-03-10 05:41:32,882 INFO     Training average loss at step 300: 665793.755625
+2023-03-10 05:42:31,530 INFO     Training average regularization at step 400: 193178.328281
+2023-03-10 05:42:31,530 INFO     Training average loss at step 400: 642007.770938
+2023-03-10 05:43:30,738 INFO     Training average regularization at step 500: 190152.338281
+2023-03-10 05:43:30,738 INFO     Training average loss at step 500: 630704.189063
+2023-03-10 05:44:30,009 INFO     Training average regularization at step 600: 187609.702969
+2023-03-10 05:44:30,009 INFO     Training average loss at step 600: 611060.304375
+2023-03-10 05:45:29,499 INFO     Training average regularization at step 700: 185407.750000
+2023-03-10 05:45:29,499 INFO     Training average loss at step 700: 597690.329063
+2023-03-10 05:46:28,256 INFO     Training average regularization at step 800: 183467.024531
+2023-03-10 05:46:28,257 INFO     Training average loss at step 800: 581678.657813
+2023-03-10 05:47:31,698 INFO     Training average regularization at step 900: 181736.328750
+2023-03-10 05:47:31,698 INFO     Training average loss at step 900: 567810.763750
+2023-03-10 05:48:31,005 INFO     Training average regularization at step 1000: 180184.762500
+2023-03-10 05:48:31,005 INFO     Training average loss at step 1000: 559246.530937
+2023-03-10 05:49:30,363 INFO     Training average regularization at step 1100: 178783.693438
+2023-03-10 05:49:30,363 INFO     Training average loss at step 1100: 544255.201562
+2023-03-10 05:50:29,565 INFO     Training average regularization at step 1200: 177510.643281
+2023-03-10 05:50:29,565 INFO     Training average loss at step 1200: 534008.715313
+2023-03-10 05:51:28,483 INFO     Training average regularization at step 1300: 176349.943438
+2023-03-10 05:51:28,483 INFO     Training average loss at step 1300: 522552.913438
+2023-03-10 05:52:32,374 INFO     Training average regularization at step 1400: 175288.693438
+2023-03-10 05:52:32,374 INFO     Training average loss at step 1400: 515562.755000
+2023-03-10 05:53:31,086 INFO     Training average regularization at step 1500: 174310.483437
+2023-03-10 05:53:31,086 INFO     Training average loss at step 1500: 505056.859375
+2023-03-10 05:54:30,117 INFO     Training average regularization at step 1600: 173405.832500
+2023-03-10 05:54:30,117 INFO     Training average loss at step 1600: 496270.604063
+2023-03-10 05:55:29,358 INFO     Training average regularization at step 1700: 172566.408906
+2023-03-10 05:55:29,359 INFO     Training average loss at step 1700: 488229.020313
+2023-03-10 05:56:28,230 INFO     Training average regularization at step 1800: 171784.817812
+2023-03-10 05:56:28,230 INFO     Training average loss at step 1800: 481090.444375
+2023-03-10 05:57:27,612 INFO     Training average regularization at step 1900: 171055.057969
+2023-03-10 05:57:27,612 INFO     Training average loss at step 1900: 475412.065312
+2023-03-10 05:58:31,186 INFO     Training average regularization at step 2000: 170369.585469
+2023-03-10 05:58:31,187 INFO     Training average loss at step 2000: 465473.305000
+2023-03-10 05:59:30,172 INFO     Training average regularization at step 2100: 169723.597500
+2023-03-10 05:59:30,172 INFO     Training average loss at step 2100: 462512.850625
+2023-03-10 06:00:29,709 INFO     Training average regularization at step 2200: 169113.165781
+2023-03-10 06:00:29,709 INFO     Training average loss at step 2200: 453423.817812
+2023-03-10 06:01:29,029 INFO     Training average regularization at step 2300: 168532.648594
+2023-03-10 06:01:29,029 INFO     Training average loss at step 2300: 450063.121250
+2023-03-10 06:02:27,747 INFO     Training average regularization at step 2400: 167979.812344
+2023-03-10 06:02:27,748 INFO     Training average loss at step 2400: 441409.604687
+2023-03-10 06:03:31,881 INFO     Change learning_rate to 0.000010 at step 2500
+2023-03-10 06:03:31,881 INFO     Training average regularization at step 2500: 167451.628438
+2023-03-10 06:03:31,881 INFO     Training average loss at step 2500: 437148.010937
+2023-03-10 06:04:30,884 INFO     Training average regularization at step 2600: 166413.010781
+2023-03-10 06:04:30,884 INFO     Training average loss at step 2600: 430238.354063
+2023-03-10 06:05:29,528 INFO     Training average regularization at step 2700: 165538.451250
+2023-03-10 06:05:29,528 INFO     Training average loss at step 2700: 425246.622500
+2023-03-10 06:06:29,161 INFO     Training average regularization at step 2800: 165099.693281
+2023-03-10 06:06:29,161 INFO     Training average loss at step 2800: 427351.338438
+2023-03-10 06:07:28,065 INFO     Training average regularization at step 2900: 164802.495469
+2023-03-10 06:07:28,065 INFO     Training average loss at step 2900: 423339.577969
+2023-03-10 06:08:27,586 INFO     Training average regularization at step 3000: 164563.137500
+2023-03-10 06:08:27,586 INFO     Training average loss at step 3000: 414781.029375
+2023-03-10 06:09:31,087 INFO     Training average regularization at step 3100: 164350.923906
+2023-03-10 06:09:31,087 INFO     Training average loss at step 3100: 412088.832500
+2023-03-10 06:10:30,022 INFO     Training average regularization at step 3200: 164158.825781
+2023-03-10 06:10:30,023 INFO     Training average loss at step 3200: 410947.207656
+2023-03-10 06:11:29,015 INFO     Training average regularization at step 3300: 163982.323437
+2023-03-10 06:11:29,016 INFO     Training average loss at step 3300: 409759.073125
+2023-03-10 06:12:28,466 INFO     Training average regularization at step 3400: 163818.382188
+2023-03-10 06:12:28,466 INFO     Training average loss at step 3400: 409841.011562
+2023-03-10 06:13:28,153 INFO     Training average regularization at step 3500: 163665.472969
+2023-03-10 06:13:28,153 INFO     Training average loss at step 3500: 409295.552500
+2023-03-10 06:14:31,739 INFO     Training average regularization at step 3600: 163522.317812
+2023-03-10 06:14:31,740 INFO     Training average loss at step 3600: 408430.422500
+2023-03-10 06:15:31,140 INFO     Training average regularization at step 3700: 163387.880000
+2023-03-10 06:15:31,140 INFO     Training average loss at step 3700: 410033.124688
+2023-03-10 06:16:30,194 INFO     Training average regularization at step 3800: 163261.443906
+2023-03-10 06:16:30,194 INFO     Training average loss at step 3800: 405992.257812
+2023-03-10 06:17:29,258 INFO     Training average regularization at step 3900: 163142.111563
+2023-03-10 06:17:29,258 INFO     Training average loss at step 3900: 408922.220625
+2023-03-10 06:18:28,265 INFO     Training average regularization at step 4000: 163029.303281
+2023-03-10 06:18:28,266 INFO     Training average loss at step 4000: 405237.741563
+2023-03-10 06:19:27,336 INFO     Training average regularization at step 4100: 162922.707969
+2023-03-10 06:19:27,336 INFO     Training average loss at step 4100: 407576.643437
+2023-03-10 06:20:31,380 INFO     Training average regularization at step 4200: 162821.737187
+2023-03-10 06:20:31,380 INFO     Training average loss at step 4200: 404422.432188
+2023-03-10 06:21:30,475 INFO     Training average regularization at step 4300: 162726.248750
+2023-03-10 06:21:30,475 INFO     Training average loss at step 4300: 404035.470313
+2023-03-10 06:22:29,098 INFO     Training average regularization at step 4400: 162635.589688
+2023-03-10 06:22:29,099 INFO     Training average loss at step 4400: 404555.439063
+2023-03-10 06:23:28,088 INFO     Training average regularization at step 4500: 162549.644063
+2023-03-10 06:23:28,088 INFO     Training average loss at step 4500: 404114.715000
+2023-03-10 06:24:27,411 INFO     Training average regularization at step 4600: 162468.060312
+2023-03-10 06:24:27,411 INFO     Training average loss at step 4600: 405256.245000
+2023-03-10 06:25:30,978 INFO     Training average regularization at step 4700: 162390.524688
+2023-03-10 06:25:30,978 INFO     Training average loss at step 4700: 402414.990781
+2023-03-10 06:26:30,175 INFO     Training average regularization at step 4800: 162316.695937
+2023-03-10 06:26:30,175 INFO     Training average loss at step 4800: 402488.515000
+2023-03-10 06:27:29,161 INFO     Training average regularization at step 4900: 162246.487187
+2023-03-10 06:27:29,161 INFO     Training average loss at step 4900: 401887.344375
+Train_Embedding_Model del ... 
+100%|██████████| 28797/28797 [00:01<00:00, 14435.27it/s]
+generate soft canonicalization seed for iter3
+Link result:iter2
+right:31448
+total:36814
+Accuracy:0.8542402346933232
+Start predicting k for clustering!
+15530
+100%|██████████| 5/5 [4:38:43<00:00, 3344.62s/it]
+100%|██████████| 20/20 [18:52:27<00:00, 3397.37s/it]
+cluster_k: 7400
+generate soft link seed for iter3
+Canonicalization result:iter2
+Ave-prec= 0.8304333333333332 macro_prec= 0.8304 micro_prec= 0.8712 pair_prec= 0.7897
+Ave-recall= 0.8385333333333334 macro_recall= 0.6388 micro_recall= 0.9187 pair_recall= 0.9581
+Ave-F1= 0.8274 macro_f1= 0.7221 micro_f1= 0.8943 pair_f1= 0.8658
+Model: #Clusters: 6226, #Singletons 1529
+Gold: #Clusters: 6060, #Singletons 2
+
+args.out_path: output/reverb_iter3_1
+rm: cannot remove 'output/reverb_iter3_1': No such file or directory
+dataset: reverb
+load Reverb45k_dataset ... 
+load side_info
+clean_ent_list: <class 'list'> 1798923
+clean_rel_list: <class 'list'> 23111
+load init embeddings
+generate TransE embeddings ./file/reverb_iter4/1E_init
+self.training_time use pre-trained crawl embeddings ... 
+2023-03-11 06:02:41,149 INFO     Model: TransE
+2023-03-11 06:02:41,150 INFO     #entity: 1798923
+2023-03-11 06:02:41,150 INFO     #relation: 23111
+2023-03-11 06:02:41,150 INFO     #train: 3004847
+2023-03-11 06:02:41,150 INFO     Model Parameter Configuration:
+2023-03-11 06:02:41,150 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-03-11 06:02:41,150 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-03-11 06:02:41,151 INFO     Parameter entity_embedding: torch.Size([1798923, 300]), require_grad = True
+2023-03-11 06:02:41,151 INFO     Parameter relation_embedding: torch.Size([23111, 300]), require_grad = True
+2023-03-11 06:03:20,695 INFO     Start Training...
+2023-03-11 06:03:20,696 INFO     init_step = 0
+2023-03-11 06:03:20,696 INFO     single_batch_size = 2048
+2023-03-11 06:03:20,696 INFO     single_negative_adversarial_sampling = 32
+2023-03-11 06:03:20,696 INFO     hidden_dim = 300
+2023-03-11 06:03:20,696 INFO     single_gamma = 12.000000
+2023-03-11 06:03:20,696 INFO     negative_adversarial_sampling = True
+2023-03-11 06:03:20,696 INFO     adversarial_temperature = 1.000000
+2023-03-11 06:03:20,696 INFO     self.p.use_cross_seed = 1.000000
+2023-03-11 06:03:20,696 INFO     self.p.update_seed = 0.000000
+2023-03-11 06:03:20,696 INFO     self.p.max_steps = 5000.000000
+2023-03-11 06:03:20,696 INFO     self.p.turn_to_seed = 1000.000000
+2023-03-11 06:03:20,696 INFO     self.p.seed_max_steps = 2000.000000
+2023-03-11 06:03:20,696 INFO     self.p.update_seed_steps = 6000.000000
+2023-03-11 06:03:20,696 INFO     learning_rate = 0
+2023-03-11 06:03:22,847 INFO     Training average regularization at step 0: 162147.484375
+2023-03-11 06:03:22,847 INFO     Training average loss at step 0: 419057.125000
+2023-03-11 06:04:22,866 INFO     Training average regularization at step 100: 154610.098594
+2023-03-11 06:04:22,866 INFO     Training average loss at step 100: 425990.132500
+2023-03-11 06:05:22,464 INFO     Training average regularization at step 200: 147112.645469
+2023-03-11 06:05:22,464 INFO     Training average loss at step 200: 416828.846562
+2023-03-11 06:06:27,522 INFO     Training average regularization at step 300: 143908.327813
+2023-03-11 06:06:27,522 INFO     Training average loss at step 300: 409665.406250
+2023-03-11 06:07:27,549 INFO     Training average regularization at step 400: 141924.688750
+2023-03-11 06:07:27,549 INFO     Training average loss at step 400: 402982.668750
+2023-03-11 06:08:27,606 INFO     Training average regularization at step 500: 140421.313438
+2023-03-11 06:08:27,606 INFO     Training average loss at step 500: 396491.871250
+2023-03-11 06:09:27,601 INFO     Training average regularization at step 600: 139178.292500
+2023-03-11 06:09:27,601 INFO     Training average loss at step 600: 391997.205313
+2023-03-11 06:10:28,076 INFO     Training average regularization at step 700: 138109.779219
+2023-03-11 06:10:28,076 INFO     Training average loss at step 700: 386437.315312
+2023-03-11 06:11:33,025 INFO     Training average regularization at step 800: 137170.265469
+2023-03-11 06:11:33,025 INFO     Training average loss at step 800: 381242.207188
+2023-03-11 06:12:33,172 INFO     Training average regularization at step 900: 136333.729375
+2023-03-11 06:12:33,173 INFO     Training average loss at step 900: 376733.203125
+2023-03-11 06:13:33,418 INFO     Training average regularization at step 1000: 135583.627656
+2023-03-11 06:13:33,418 INFO     Training average loss at step 1000: 373967.907813
+2023-03-11 06:14:33,420 INFO     Training average regularization at step 1100: 134906.007812
+2023-03-11 06:14:33,420 INFO     Training average loss at step 1100: 368436.100313
+2023-03-11 06:15:33,746 INFO     Training average regularization at step 1200: 134291.583281
+2023-03-11 06:15:33,747 INFO     Training average loss at step 1200: 366281.311875
+2023-03-11 06:16:33,818 INFO     Training average regularization at step 1300: 133730.382969
+2023-03-11 06:16:33,818 INFO     Training average loss at step 1300: 359869.714375
+2023-03-11 06:17:38,770 INFO     Training average regularization at step 1400: 133215.042187
+2023-03-11 06:17:38,771 INFO     Training average loss at step 1400: 359510.908594
+2023-03-11 06:18:38,577 INFO     Training average regularization at step 1500: 132740.860781
+2023-03-11 06:18:38,577 INFO     Training average loss at step 1500: 352639.769688
+2023-03-11 06:19:38,875 INFO     Training average regularization at step 1600: 132300.550469
+2023-03-11 06:19:38,875 INFO     Training average loss at step 1600: 350999.928750
+2023-03-11 06:20:38,942 INFO     Training average regularization at step 1700: 131892.596250
+2023-03-11 06:20:38,943 INFO     Training average loss at step 1700: 348053.703437
+2023-03-11 06:21:43,686 INFO     Training average regularization at step 1800: 131511.759844
+2023-03-11 06:21:43,687 INFO     Training average loss at step 1800: 346133.372031
+2023-03-11 06:22:44,094 INFO     Training average regularization at step 1900: 131154.582813
+2023-03-11 06:22:44,095 INFO     Training average loss at step 1900: 341632.803438
+2023-03-11 06:23:44,475 INFO     Training average regularization at step 2000: 130818.276094
+2023-03-11 06:23:44,475 INFO     Training average loss at step 2000: 340059.997812
+2023-03-11 06:24:45,161 INFO     Training average regularization at step 2100: 130500.007031
+2023-03-11 06:24:45,162 INFO     Training average loss at step 2100: 337567.936094
+2023-03-11 06:25:45,398 INFO     Training average regularization at step 2200: 130198.815000
+2023-03-11 06:25:45,399 INFO     Training average loss at step 2200: 334741.375469
+2023-03-11 06:26:50,928 INFO     Training average regularization at step 2300: 129912.807109
+2023-03-11 06:26:50,928 INFO     Training average loss at step 2300: 332420.024687
+2023-03-11 06:27:50,787 INFO     Training average regularization at step 2400: 129638.179531
+2023-03-11 06:27:50,788 INFO     Training average loss at step 2400: 329288.712656
+2023-03-11 06:28:51,255 INFO     Change learning_rate to 0.000010 at step 2500
+2023-03-11 06:28:51,255 INFO     Training average regularization at step 2500: 129375.360859
+2023-03-11 06:28:51,255 INFO     Training average loss at step 2500: 327804.244531
+2023-03-11 06:29:51,555 INFO     Training average regularization at step 2600: 128621.209219
+2023-03-11 06:29:51,556 INFO     Training average loss at step 2600: 321643.617344
+2023-03-11 06:30:56,044 INFO     Training average regularization at step 2700: 127974.442500
+2023-03-11 06:30:56,044 INFO     Training average loss at step 2700: 318137.895625
+2023-03-11 06:31:56,092 INFO     Training average regularization at step 2800: 127696.578359
+2023-03-11 06:31:56,092 INFO     Training average loss at step 2800: 317624.223281
+2023-03-11 06:32:56,305 INFO     Training average regularization at step 2900: 127527.947422
+2023-03-11 06:32:56,306 INFO     Training average loss at step 2900: 317567.741406
+2023-03-11 06:33:57,110 INFO     Training average regularization at step 3000: 127399.597187
+2023-03-11 06:33:57,110 INFO     Training average loss at step 3000: 307529.332656
+2023-03-11 06:34:57,397 INFO     Training average regularization at step 3100: 127287.458750
+2023-03-11 06:34:57,397 INFO     Training average loss at step 3100: 304026.195156
+2023-03-11 06:36:02,405 INFO     Training average regularization at step 3200: 127186.878984
+2023-03-11 06:36:02,405 INFO     Training average loss at step 3200: 305028.693437
+2023-03-11 06:37:02,367 INFO     Training average regularization at step 3300: 127095.168984
+2023-03-11 06:37:02,367 INFO     Training average loss at step 3300: 303619.488750
+2023-03-11 06:38:02,529 INFO     Training average regularization at step 3400: 127010.557656
+2023-03-11 06:38:02,529 INFO     Training average loss at step 3400: 303269.853281
+2023-03-11 06:39:02,665 INFO     Training average regularization at step 3500: 126931.927422
+2023-03-11 06:39:02,665 INFO     Training average loss at step 3500: 306171.704688
+2023-03-11 06:40:02,485 INFO     Training average regularization at step 3600: 126858.531406
+2023-03-11 06:40:02,485 INFO     Training average loss at step 3600: 305028.212187
+2023-03-11 06:41:02,767 INFO     Training average regularization at step 3700: 126789.903047
+2023-03-11 06:41:02,768 INFO     Training average loss at step 3700: 302606.204531
+2023-03-11 06:42:07,566 INFO     Training average regularization at step 3800: 126725.407578
+2023-03-11 06:42:07,566 INFO     Training average loss at step 3800: 303092.691563
+2023-03-11 06:43:07,931 INFO     Training average regularization at step 3900: 126664.706328
+2023-03-11 06:43:07,931 INFO     Training average loss at step 3900: 303379.287344
+2023-03-11 06:44:08,688 INFO     Training average regularization at step 4000: 126607.530938
+2023-03-11 06:44:08,689 INFO     Training average loss at step 4000: 303347.933594
+2023-03-11 06:45:09,236 INFO     Training average regularization at step 4100: 126553.718906
+2023-03-11 06:45:09,236 INFO     Training average loss at step 4100: 302974.742344
+2023-03-11 06:46:09,432 INFO     Training average regularization at step 4200: 126502.832344
+2023-03-11 06:46:09,432 INFO     Training average loss at step 4200: 302008.906719
+2023-03-11 06:47:14,614 INFO     Training average regularization at step 4300: 126454.677031
+2023-03-11 06:47:14,614 INFO     Training average loss at step 4300: 302785.136719
+2023-03-11 06:48:14,944 INFO     Training average regularization at step 4400: 126409.117031
+2023-03-11 06:48:14,944 INFO     Training average loss at step 4400: 302399.091875
+2023-03-11 06:49:14,649 INFO     Training average regularization at step 4500: 126365.739844
+2023-03-11 06:49:14,650 INFO     Training average loss at step 4500: 302695.940469
+2023-03-11 06:50:15,178 INFO     Training average regularization at step 4600: 126324.532344
+2023-03-11 06:50:15,178 INFO     Training average loss at step 4600: 301416.100313
+2023-03-11 06:51:15,131 INFO     Training average regularization at step 4700: 126285.413281
+2023-03-11 06:51:15,131 INFO     Training average loss at step 4700: 300963.601719
+2023-03-11 06:52:19,997 INFO     Training average regularization at step 4800: 126248.140391
+2023-03-11 06:52:19,997 INFO     Training average loss at step 4800: 301499.880156
+2023-03-11 06:53:20,077 INFO     Training average regularization at step 4900: 126212.566875
+2023-03-11 06:53:20,078 INFO     Training average loss at step 4900: 301558.669219
+Train_Embedding_Model del ... 
+100%|██████████| 28797/28797 [00:01<00:00, 14418.33it/s]
+generate soft canonicalization seed for iter4
+Link result:iter3
+right:31561
+total:36814
+Accuracy:0.8573097191285923
+Start predicting k for clustering!
+15530
+100%|██████████| 5/5 [4:36:05<00:00, 3313.01s/it]
+100%|██████████| 20/20 [18:43:24<00:00, 3370.21s/it]
+cluster_k: 7200
+generate soft link seed for iter4
+Canonicalization result:iter3
+Ave-prec= 0.8125333333333332 macro_prec= 0.8207 micro_prec= 0.8626 pair_prec= 0.7543
+Ave-recall= 0.8441333333333333 macro_recall= 0.651 micro_recall= 0.9218 pair_recall= 0.9596
+Ave-F1= 0.8206666666666665 macro_f1= 0.7261 micro_f1= 0.8912 pair_f1= 0.8447
+Model: #Clusters: 6069, #Singletons 1425
+Gold: #Clusters: 6060, #Singletons 2
+
+args.out_path: output/reverb_iter4_1
+rm: cannot remove 'output/reverb_iter4_1': No such file or directory
+dataset: reverb
+load Reverb45k_dataset ... 
+load side_info
+clean_ent_list: <class 'list'> 1798923
+clean_rel_list: <class 'list'> 23111
+load init embeddings
+2023-03-12 06:16:53,909 INFO     Model: TransE
+2023-03-12 06:16:53,910 INFO     #entity: 1798923
+2023-03-12 06:16:53,910 INFO     #relation: 23111
+2023-03-12 06:16:53,910 INFO     #train: 3004847
+2023-03-12 06:16:53,910 INFO     Model Parameter Configuration:
+2023-03-12 06:16:53,910 INFO     Parameter gamma: torch.Size([1]), require_grad = False
+2023-03-12 06:16:53,910 INFO     Parameter embedding_range: torch.Size([1]), require_grad = False
+2023-03-12 06:16:53,910 INFO     Parameter entity_embedding: torch.Size([1798923, 300]), require_grad = True
+2023-03-12 06:16:53,910 INFO     Parameter relation_embedding: torch.Size([23111, 300]), require_grad = True
+generate TransE embeddings ./file/reverb_iter5/1E_init
+self.training_time use pre-trained crawl embeddings ... 
+2023-03-12 06:17:33,288 INFO     Start Training...
+2023-03-12 06:17:33,288 INFO     init_step = 0
+2023-03-12 06:17:33,288 INFO     single_batch_size = 2048
+2023-03-12 06:17:33,288 INFO     single_negative_adversarial_sampling = 32
+2023-03-12 06:17:33,288 INFO     hidden_dim = 300
+2023-03-12 06:17:33,288 INFO     single_gamma = 12.000000
+2023-03-12 06:17:33,289 INFO     negative_adversarial_sampling = True
+2023-03-12 06:17:33,289 INFO     adversarial_temperature = 1.000000
+2023-03-12 06:17:33,289 INFO     self.p.use_cross_seed = 1.000000
+2023-03-12 06:17:33,289 INFO     self.p.update_seed = 0.000000
+2023-03-12 06:17:33,289 INFO     self.p.max_steps = 5000.000000
+2023-03-12 06:17:33,289 INFO     self.p.turn_to_seed = 1000.000000
+2023-03-12 06:17:33,289 INFO     self.p.seed_max_steps = 2000.000000
+2023-03-12 06:17:33,289 INFO     self.p.update_seed_steps = 6000.000000
+2023-03-12 06:17:33,289 INFO     learning_rate = 0
+2023-03-12 06:17:35,393 INFO     Training average regularization at step 0: 126162.453125
+2023-03-12 06:17:35,395 INFO     Training average loss at step 0: 263876.937500
+2023-03-12 06:18:34,595 INFO     Training average regularization at step 100: 120091.156562
+2023-03-12 06:18:34,595 INFO     Training average loss at step 100: 318455.927969
+2023-03-12 06:19:33,331 INFO     Training average regularization at step 200: 114583.368672
+2023-03-12 06:19:33,332 INFO     Training average loss at step 200: 313598.277500
+2023-03-12 06:20:32,194 INFO     Training average regularization at step 300: 112628.865078
+2023-03-12 06:20:32,194 INFO     Training average loss at step 300: 313486.522656
+2023-03-12 06:21:36,287 INFO     Training average regularization at step 400: 111560.135078
+2023-03-12 06:21:36,287 INFO     Training average loss at step 400: 309856.481719
+2023-03-12 06:22:35,262 INFO     Training average regularization at step 500: 110787.795078
+2023-03-12 06:22:35,262 INFO     Training average loss at step 500: 308886.104375
+2023-03-12 06:23:34,037 INFO     Training average regularization at step 600: 110160.279063
+2023-03-12 06:23:34,038 INFO     Training average loss at step 600: 302275.727031
+2023-03-12 06:24:33,035 INFO     Training average regularization at step 700: 109626.817109
+2023-03-12 06:24:33,036 INFO     Training average loss at step 700: 302716.585000
+2023-03-12 06:25:32,129 INFO     Training average regularization at step 800: 109161.020234
+2023-03-12 06:25:32,129 INFO     Training average loss at step 800: 299732.912500
+2023-03-12 06:26:35,754 INFO     Training average regularization at step 900: 108748.859609
+2023-03-12 06:26:35,755 INFO     Training average loss at step 900: 297326.191406
+2023-03-12 06:27:35,140 INFO     Training average regularization at step 1000: 108380.161172
+2023-03-12 06:27:35,141 INFO     Training average loss at step 1000: 295949.695156
+2023-03-12 06:28:33,852 INFO     Training average regularization at step 1100: 108047.625469
+2023-03-12 06:28:33,852 INFO     Training average loss at step 1100: 290978.501406
+2023-03-12 06:29:33,276 INFO     Training average regularization at step 1200: 107745.205000
+2023-03-12 06:29:33,276 INFO     Training average loss at step 1200: 291568.480156
+2023-03-12 06:30:32,063 INFO     Training average regularization at step 1300: 107470.116875
+2023-03-12 06:30:32,063 INFO     Training average loss at step 1300: 289575.672344
+2023-03-12 06:31:36,512 INFO     Training average regularization at step 1400: 107218.638984
+2023-03-12 06:31:36,512 INFO     Training average loss at step 1400: 288211.628437
+2023-03-12 06:32:35,330 INFO     Training average regularization at step 1500: 106987.176484
+2023-03-12 06:32:35,331 INFO     Training average loss at step 1500: 286712.810937
+2023-03-12 06:33:34,229 INFO     Training average regularization at step 1600: 106772.908359
+2023-03-12 06:33:34,229 INFO     Training average loss at step 1600: 285184.005469
+2023-03-12 06:34:33,666 INFO     Training average regularization at step 1700: 106573.800859
+2023-03-12 06:34:33,666 INFO     Training average loss at step 1700: 284424.852969
+2023-03-12 06:35:32,878 INFO     Training average regularization at step 1800: 106387.614844
+2023-03-12 06:35:32,878 INFO     Training average loss at step 1800: 281629.882188
+2023-03-12 06:36:31,802 INFO     Training average regularization at step 1900: 106212.763984
+2023-03-12 06:36:31,802 INFO     Training average loss at step 1900: 281521.335938
+2023-03-12 06:37:35,350 INFO     Training average regularization at step 2000: 106048.300859
+2023-03-12 06:37:35,350 INFO     Training average loss at step 2000: 278628.306250
+2023-03-12 06:38:34,415 INFO     Training average regularization at step 2100: 105891.780156
+2023-03-12 06:38:34,415 INFO     Training average loss at step 2100: 279467.214375
+2023-03-12 06:39:33,652 INFO     Training average regularization at step 2200: 105743.411406
+2023-03-12 06:39:33,652 INFO     Training average loss at step 2200: 277482.921406
+2023-03-12 06:40:32,759 INFO     Training average regularization at step 2300: 105602.488750
+2023-03-12 06:40:32,759 INFO     Training average loss at step 2300: 277156.828594
+2023-03-12 06:41:31,845 INFO     Training average regularization at step 2400: 105468.382266
+2023-03-12 06:41:31,846 INFO     Training average loss at step 2400: 275725.019844
+2023-03-12 06:42:35,821 INFO     Change learning_rate to 0.000010 at step 2500
+2023-03-12 06:42:35,822 INFO     Training average regularization at step 2500: 105338.775234
+2023-03-12 06:42:35,822 INFO     Training average loss at step 2500: 273859.393437
+2023-03-12 06:43:34,916 INFO     Training average regularization at step 2600: 104753.631016
+2023-03-12 06:43:34,916 INFO     Training average loss at step 2600: 267294.469062
+2023-03-12 06:44:33,736 INFO     Training average regularization at step 2700: 104246.545156
+2023-03-12 06:44:33,736 INFO     Training average loss at step 2700: 264991.674219
+2023-03-12 06:45:32,766 INFO     Training average regularization at step 2800: 104055.959062
+2023-03-12 06:45:32,766 INFO     Training average loss at step 2800: 265153.659219
+2023-03-12 06:46:31,650 INFO     Training average regularization at step 2900: 103953.688672
+2023-03-12 06:46:31,650 INFO     Training average loss at step 2900: 264313.190156
+2023-03-12 06:47:36,334 INFO     Training average regularization at step 3000: 103880.780859
+2023-03-12 06:47:36,335 INFO     Training average loss at step 3000: 254622.586250
+2023-03-12 06:48:34,778 INFO     Training average regularization at step 3100: 103818.085703
+2023-03-12 06:48:34,778 INFO     Training average loss at step 3100: 251736.087969
+2023-03-12 06:49:34,067 INFO     Training average regularization at step 3200: 103762.517031
+2023-03-12 06:49:34,067 INFO     Training average loss at step 3200: 253082.172969
+2023-03-12 06:50:32,603 INFO     Training average regularization at step 3300: 103712.496875
+2023-03-12 06:50:32,603 INFO     Training average loss at step 3300: 251369.825469
+2023-03-12 06:51:36,298 INFO     Training average regularization at step 3400: 103666.883906
+2023-03-12 06:51:36,298 INFO     Training average loss at step 3400: 250741.182031
+2023-03-12 06:52:35,617 INFO     Training average regularization at step 3500: 103624.755156
+2023-03-12 06:52:35,617 INFO     Training average loss at step 3500: 250447.124688
+2023-03-12 06:53:34,806 INFO     Training average regularization at step 3600: 103585.469375
+2023-03-12 06:53:34,806 INFO     Training average loss at step 3600: 250868.674375
+2023-03-12 06:54:34,210 INFO     Training average regularization at step 3700: 103549.010625
+2023-03-12 06:54:34,210 INFO     Training average loss at step 3700: 252672.970156
+2023-03-12 06:55:33,522 INFO     Training average regularization at step 3800: 103514.855859
+2023-03-12 06:55:33,522 INFO     Training average loss at step 3800: 249871.106406
+2023-03-12 06:56:32,625 INFO     Training average regularization at step 3900: 103482.706328
+2023-03-12 06:56:32,625 INFO     Training average loss at step 3900: 250377.011719
+2023-03-12 06:57:36,209 INFO     Training average regularization at step 4000: 103452.472500
+2023-03-12 06:57:36,209 INFO     Training average loss at step 4000: 250679.012344
+2023-03-12 06:58:35,334 INFO     Training average regularization at step 4100: 103424.029375
+2023-03-12 06:58:35,335 INFO     Training average loss at step 4100: 250941.914062
+2023-03-12 06:59:33,998 INFO     Training average regularization at step 4200: 103397.269453
+2023-03-12 06:59:33,999 INFO     Training average loss at step 4200: 250985.491875
+2023-03-12 07:00:33,968 INFO     Training average regularization at step 4300: 103371.959922
+2023-03-12 07:00:33,968 INFO     Training average loss at step 4300: 250398.878594
+2023-03-12 07:01:33,523 INFO     Training average regularization at step 4400: 103347.907734
+2023-03-12 07:01:33,523 INFO     Training average loss at step 4400: 249857.583906
+2023-03-12 07:02:32,188 INFO     Training average regularization at step 4500: 103325.109063
+2023-03-12 07:02:32,189 INFO     Training average loss at step 4500: 250846.862969
+2023-03-12 07:03:36,606 INFO     Training average regularization at step 4600: 103303.456406
+2023-03-12 07:03:36,606 INFO     Training average loss at step 4600: 250857.018281
+2023-03-12 07:04:35,328 INFO     Training average regularization at step 4700: 103282.912031
+2023-03-12 07:04:35,328 INFO     Training average loss at step 4700: 249924.560781
+2023-03-12 07:05:35,120 INFO     Training average regularization at step 4800: 103263.412187
+2023-03-12 07:05:35,120 INFO     Training average loss at step 4800: 249809.576250
+2023-03-12 07:06:34,374 INFO     Training average regularization at step 4900: 103244.856094
+2023-03-12 07:06:34,374 INFO     Training average loss at step 4900: 249280.779688
+Train_Embedding_Model del ... 
+100%|██████████| 28797/28797 [00:01<00:00, 14423.78it/s]
+generate soft canonicalization seed for iter5
+Link result:iter4
+right:31577
+total:36814
+Accuracy:0.8577443363937632
+Start predicting k for clustering!
+15530
+100%|██████████| 5/5 [4:35:55<00:00, 3311.00s/it]
+ 10%|█         | 2/20 [1:40:31<15:09:42, 3032.33s/it]
+Process finished with exit code 137 (interrupted by signal 9: SIGKILL)
+
